@@ -1,0 +1,39 @@
+import { SERVICES } from "@/content/services";
+import { SITE, abs } from "@/content/site";
+import { TEAM } from "@/content/team";
+import { getPublishedArticles } from "@/lib/articles";
+
+export const revalidate = 3600;
+
+export async function GET() {
+  const articles = await getPublishedArticles();
+  const lines = [
+    `# ${SITE.name}`,
+    "",
+    `> ${SITE.description} Nettstedet er på norsk (bokmål).`,
+    "",
+    "Logopedpraksis i Tromsø for barn og voksne. Vi behandler på kontoret, eller etter avtale i hjemmet, barnehagen og skolen. Behandling kan dekkes av HELFO når vilkårene er oppfylt (henvisning fra lege; for barn under 18 år også avslag fra kommunen/PPT eller fylket).",
+    "",
+    "## Tjenester",
+    ...SERVICES.map((s) => `- [${s.name}](${abs(`/tjenester/${s.slug}`)}): ${s.short}`),
+    "",
+    "## Logopeder",
+    ...TEAM.map((t) => `- [${t.name}, ${t.title}](${abs(`/logopeder/${t.slug}`)}): ${t.lead}`),
+    "",
+    "## Viktige sider",
+    `- [Om oss](${abs("/om-oss")}): Hvem vi er og hvordan vi jobber`,
+    `- [Refusjon og henvisning](${abs("/refusjon")}): Regler for behandling dekket av HELFO`,
+    `- [Kontakt](${abs("/kontakt")}): Telefon og kontaktskjema`,
+    `- [Artikler](${abs("/artikler")}): Artikler fra logopedene`,
+    "",
+    ...(articles.length
+      ? ["## Artikler", ...articles.map((a) => `- [${a.title}](${abs(`/artikler/${a.slug}`)})${a.excerpt ? `: ${a.excerpt}` : ""}`), ""]
+      : []),
+    "## Kontakt",
+    ...TEAM.map((t) => `- ${t.name}: ${t.phone}`),
+    "",
+  ];
+  return new Response(lines.join("\n"), {
+    headers: { "Content-Type": "text/plain; charset=utf-8", "Cache-Control": "public, max-age=3600" },
+  });
+}
