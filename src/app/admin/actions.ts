@@ -2,7 +2,7 @@
 
 import bcrypt from "bcryptjs";
 import { eq } from "drizzle-orm";
-import { revalidatePath, revalidateTag } from "next/cache";
+import { revalidatePath, updateTag } from "next/cache";
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 import { db, schema } from "@/db";
@@ -46,10 +46,11 @@ export async function logoutAction() {
 }
 
 function revalidateAll(slug?: string) {
-  revalidateTag("articles", "max");
+  updateTag("articles"); // expire immediately so sitemap, llms.txt and lists reflect the change
   revalidatePath("/artikler");
   revalidatePath("/");
   revalidatePath("/sitemap.xml");
+  revalidatePath("/llms.txt");
   if (slug) revalidatePath(`/artikler/${slug}`);
 }
 
