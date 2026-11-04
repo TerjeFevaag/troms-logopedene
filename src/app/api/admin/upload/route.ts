@@ -9,7 +9,8 @@ const MAX = 4 * 1024 * 1024; // Vercel function body limit is 4.5 MB
 
 export async function POST(req: Request) {
   if (!(await getSession())) return NextResponse.json({ error: "Ikke innlogget" }, { status: 401 });
-  if (!process.env.BLOB_READ_WRITE_TOKEN) {
+  // Either a read/write token, or a store id (OIDC auth, used by newer Vercel Blob stores).
+  if (!process.env.BLOB_READ_WRITE_TOKEN && !process.env.BLOB_STORE_ID) {
     return NextResponse.json({ error: "Bildelagring er ikke satt opp" }, { status: 503 });
   }
   const form = await req.formData();

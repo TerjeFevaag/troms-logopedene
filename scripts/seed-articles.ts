@@ -10,13 +10,20 @@ if (!url) throw new Error("Set DATABASE_URL");
 const sql = neon(url);
 const publish = process.argv.includes("--publish");
 
-for (const a of SEED_ARTICLES) {
-  const status = publish ? "published" : "draft";
-  const publishedAt = publish ? new Date(a.publishedAt) : null;
-  const rows = await sql`
-    insert into articles (slug, title, excerpt, body, cover_image_url, cover_alt, status, seo_title, seo_description, published_at)
-    values (${a.slug}, ${a.title}, ${a.excerpt}, ${cleanHtml(a.body)}, ${a.cover?.src ?? null}, ${a.cover?.alt ?? null}, ${status}, ${a.seoTitle ?? null}, ${a.seoDescription ?? null}, ${publishedAt})
-    on conflict (slug) do nothing
-    returning slug`;
-  console.log(rows.length ? `inserted (${status}): ${a.slug}` : `exists, skipped: ${a.slug}`);
+async function main() {
+  for (const a of SEED_ARTICLES) {
+    const status = publish ? "published" : "draft";
+    const publishedAt = publish ? new Date(a.publishedAt) : null;
+    const rows = await sql`
+      insert into articles (slug, title, excerpt, body, cover_image_url, cover_alt, status, seo_title, seo_description, published_at)
+      values (${a.slug}, ${a.title}, ${a.excerpt}, ${cleanHtml(a.body)}, ${a.cover?.src ?? null}, ${a.cover?.alt ?? null}, ${status}, ${a.seoTitle ?? null}, ${a.seoDescription ?? null}, ${publishedAt})
+      on conflict (slug) do nothing
+      returning slug`;
+    console.log(rows.length ? `inserted (${status}): ${a.slug}` : `exists, skipped: ${a.slug}`);
+  }
 }
+
+main().catch((e) => {
+  console.error(e);
+  process.exit(1);
+});

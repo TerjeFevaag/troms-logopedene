@@ -44,3 +44,6 @@ next-env.d.ts
 # internal client material, not for the public repo
 /Details.txt
 /tromsologopedene_logo.png
+
+.vercel
+.env*.local

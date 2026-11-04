@@ -8,13 +8,20 @@ const seed = process.env.ADMIN_SEED;
 if (!url || !seed) throw new Error("Set DATABASE_URL and ADMIN_SEED");
 const sql = neon(url);
 
-for (const pair of seed.split(",")) {
-  const i = pair.indexOf(":");
-  const email = pair.slice(0, i).trim().toLowerCase();
-  const pw = pair.slice(i + 1);
-  if (!email || pw.length < 10) throw new Error(`Bad entry for ${email}: password min 10 chars`);
-  const hash = await bcrypt.hash(pw, 12);
-  await sql`insert into admins (email, password_hash) values (${email}, ${hash})
-            on conflict (email) do update set password_hash = excluded.password_hash`;
-  console.log("seeded", email);
+async function main() {
+  for (const pair of (seed as string).split(",")) {
+    const i = pair.indexOf(":");
+    const email = pair.slice(0, i).trim().toLowerCase();
+    const pw = pair.slice(i + 1);
+    if (!email || pw.length < 10) throw new Error(`Bad entry for ${email}: password min 10 chars`);
+    const hash = await bcrypt.hash(pw, 12);
+    await sql`insert into admins (email, password_hash) values (${email}, ${hash})
+              on conflict (email) do update set password_hash = excluded.password_hash`;
+    console.log("seeded", email);
+  }
 }
+
+main().catch((e) => {
+  console.error(e);
+  process.exit(1);
+});
