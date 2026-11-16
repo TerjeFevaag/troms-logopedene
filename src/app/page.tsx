@@ -71,7 +71,7 @@ export default async function Home() {
           <div>
             <h2 id="intro" className="text-3xl font-bold md:text-4xl">Velkommen til Tromsølogopedene</h2>
             <p className="mt-5 text-lg">
-              Vi er logopeder med lang erfaring. Vi hjelper barn og voksne som strever med å snakke, forstå, lese, skrive eller svelge.
+              Vi er logopeder med lang erfaring. Vi hjelper barn, ungdom og voksne som strever med å snakke, forstå, lese, skrive eller svelge.
             </p>
             <p className="mt-4 text-lg">
               Du finner oss i {SITE.address.street} i {SITE.address.city}. Etter avtale kan vi også komme hjem til deg, i barnehagen eller på skolen.
