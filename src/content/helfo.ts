@@ -18,7 +18,7 @@ export const HELFO_TEXT = {
   /** One sentence for cards and short blurbs. */
   short: "Med henvisning fra lege dekker HELFO de fleste behandlingene. Det er ingen egenandel, og du trenger ikke søke selv.",
   /** Slightly longer, for the home page band. */
-  band: "For at HELFO skal dekke behandlingen, trenger du henvisning fra lege med diagnose. Det er ingen egenandel, og du trenger ikke søke selv. Barn og unge trenger ikke avslag fra kommunen eller PPT først.",
+  band: "Har du henvisning fra lege, dekker HELFO de fleste behandlingene. Da betaler du ingenting, og du trenger ikke søke selv. Barn trenger ikke avslag fra kommunen først.",
   /** Shown on service pages that are covered. */
   serviceCovered:
     "Behandlingen kan dekkes av HELFO når du har henvisning fra lege med diagnose. Det er ingen egenandel, og vi gjør opp direkte med HELFO.",

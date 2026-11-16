@@ -8,7 +8,8 @@ export type Service = {
   slug: string;
   image?: ServiceImage; // optional photo shown at the top of the service page
   name: string;
-  short: string; // card one-liner
+  short: string; // card one-liner (service overview, llms.txt)
+  plain: string; // very simple card text for the home page and menu (readers with reading difficulties)
   metaTitle: string;
   metaDescription: string;
   lead: string;
@@ -27,6 +28,7 @@ export const SERVICES: Service[] = [
     image: { src: "/images/stock/mor-og-sonn-leser.jpg", alt: "Mor og sønn leser en bok sammen i sofaen", width: 1600, height: 900 },
     name: "Språkvansker",
     short: "Utredning og behandling av språkvansker hos barn og voksne, inkludert afasi etter hjerneskade.",
+    plain: "For barn og voksne som strever med å forstå eller bruke språk. Også etter hjerneslag.",
     metaTitle: "Språkvansker hos barn og voksne i Tromsø",
     metaDescription:
       "Logoped i Tromsø for språkvansker hos barn og voksne: språklyder, ordforråd, grammatikk og afasi. Utredning og behandling hos Tromsølogopedene.",
@@ -81,6 +83,7 @@ export const SERVICES: Service[] = [
     slug: "stamming",
     name: "Stamming og løpsk tale",
     short: "Behandling av taleflytvansker for barn og voksne, blant annet Lidcombe-programmet og PCI.",
+    plain: "Hjelp når talen hakker eller stopper opp.",
     metaTitle: "Stamming og løpsk tale: behandling i Tromsø",
     metaDescription:
       "Logoped i Tromsø for stamming og løpsk tale. Lidcombe-programmet, PCI stammebehandling og Restart-DCM hos Tromsølogopedene.",
@@ -132,6 +135,7 @@ export const SERVICES: Service[] = [
     slug: "stemmevansker",
     name: "Stemmevansker",
     short: "Kartlegging og trening ved hes, anstrengt eller slitt stemme.",
+    plain: "Når stemmen er hes, sliten eller anstrengt.",
     metaTitle: "Stemmevansker: logoped i Tromsø",
     metaDescription:
       "Har du stemmevansker? Logoped i Tromsø hjelper med kartlegging, funksjonsøvelser og gode stemmevaner. Tromsølogopedene.",
@@ -170,6 +174,7 @@ export const SERVICES: Service[] = [
     slug: "svelgevansker",
     name: "Spise- og svelgevansker (dysfagi)",
     short: "Utredning og behandling av svelgevansker, blant annet med VitalStim og Novafon.",
+    plain: "Når det er vanskelig å spise, drikke eller svelge.",
     metaTitle: "Svelgevansker (dysfagi): logoped i Tromsø",
     metaDescription:
       "Logoped i Tromsø for spise- og svelgevansker (dysfagi). McNeill Dysphagia Theory Program, VitalStim, biofeedback og Novafon.",
@@ -208,6 +213,7 @@ export const SERVICES: Service[] = [
     slug: "ansiktslammelse",
     name: "Ansiktslammelser (facialisparese)",
     short: "Funksjonsøvelser og stimulering ved lammelse i ansiktet.",
+    plain: "Øvelser når ansiktet er lammet eller svakt.",
     metaTitle: "Ansiktslammelse (facialisparese) i Tromsø",
     metaDescription:
       "Logoped i Tromsø for ansiktslammelse (facialisparese). Funksjonsøvelser med Novafon og VitalStim hos Tromsølogopedene.",
@@ -238,6 +244,7 @@ export const SERVICES: Service[] = [
     image: { src: "/images/stock/forelder-og-barn-leser-i-telt.jpg", alt: "Forelder og barn leser sammen i et lekentelt", width: 1600, height: 1067 },
     name: "Lese- og skrivevansker / dysleksi",
     short: "Utredning med LOGOS og målrettet oppfølging ved lese- og skrivevansker.",
+    plain: "Kartlegging og hjelp når lesing og skriving er vanskelig.",
     metaTitle: "Dysleksi og lese- og skrivevansker i Tromsø",
     metaDescription:
       "Utredning av lese- og skrivevansker og dysleksi med LOGOS hos logoped i Tromsø. Oppfølging og hjelp med søknad om staveprogram.",
@@ -286,6 +293,7 @@ export const SERVICES: Service[] = [
     slug: "eilo-vcd",
     name: "VCD / EILO / stridor",
     short: "Kartlegging og trening ved anstrengelsesutløste pustevansker fra strupen.",
+    plain: "Når det blir tungt å puste under trening.",
     metaTitle: "EILO, VCD og stridor: logoped i Tromsø",
     metaDescription:
       "Logoped i Tromsø for VCD (vocal cord dysfunction), EILO og stridor. Kartlegging, avspenning og innlæring av konkrete øvelser.",
@@ -325,6 +333,7 @@ export const SERVICES: Service[] = [
     slug: "lyttetrening-ci",
     name: "Lyttetrening etter CI-operasjon",
     short: "Logopedisk oppfølging og lyttetrening etter lydpåsetting av cochlea-implantat.",
+    plain: "Lyttetrening når du har fått cochlea-implantat (CI).",
     metaTitle: "Lyttetrening etter CI-operasjon i Tromsø",
     metaDescription:
       "Logopedisk oppfølging og lyttetrening etter cochlea-implantat (CI) i Tromsø, etter henvisning fra kompetansesenter eller sykehus.",
@@ -355,6 +364,7 @@ export const SERVICES: Service[] = [
     slug: "akk",
     name: "Alternativ og supplerende kommunikasjon (AKK)",
     short: "Tilpassing og utprøving av kommunikasjonshjelpemidler ved alvorlige språk- og talevansker.",
+    plain: "Andre måter å kommunisere på, når det er vanskelig å snakke.",
     metaTitle: "AKK: alternativ og supplerende kommunikasjon",
     metaDescription:
       "Logoped i Tromsø for alternativ og supplerende kommunikasjon (AKK): tilpassing og utprøving av kommunikasjonshjelpemidler.",

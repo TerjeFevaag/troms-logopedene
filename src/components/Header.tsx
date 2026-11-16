@@ -98,7 +98,7 @@ export function Header() {
                           </span>
                           <span>
                             <span className="block font-semibold text-navy">{s.name}</span>
-                            <span className="mt-0.5 block text-sm leading-snug text-ink/80">{s.short.split(".")[0]}.</span>
+                            <span className="mt-0.5 block text-sm leading-snug text-ink/80">{s.plain.split(".")[0]}.</span>
                           </span>
                         </Link>
                       </li>

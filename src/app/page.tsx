@@ -21,11 +21,12 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
 };
 
+// Keep these short and plain: many visitors have reading and writing difficulties.
 const FACTS = [
-  { big: "2", label: "logopeder MNLL", text: "Medlemmer av Norsk Logopedlag med lang erfaring." },
-  { big: "9", label: "fagområder", text: "Fra språk og stamming til svelging og AKK." },
+  { big: String(TEAM.length), label: "logopeder", text: "Alle er medlem av Norsk Logopedlag." },
+  { big: String(SERVICES.length), label: "fagområder", text: "Fra språk og stamming til svelging." },
   { big: "Alle", label: "aldre", text: "Vi hjelper både barn og voksne." },
-  { big: "HELFO", label: "dekker behandlingen", text: "Med henvisning fra lege. Ingen egenandel." },
+  { big: "HELFO", label: "dekker det meste", text: "Med henvisning fra lege betaler du ingen egenandel." },
 ];
 
 export default async function Home() {
@@ -46,7 +47,7 @@ export default async function Home() {
           <p className="text-sm font-semibold uppercase tracking-wider text-sage-dark">{SITE.slogan}</p>
           <h1 className="mt-4 max-w-xl text-4xl font-bold sm:text-5xl lg:text-6xl">Logoped i Tromsø for barn og voksne</h1>
           <p className="mt-5 max-w-lg text-lg text-ink md:text-xl">
-            {SITE.tagline}. Vi hjelper deg med språk, tale, stemme og svelging, med tydelig kartlegging og en plan som passer deg.
+            Vi hjelper barn og voksne med språk, tale, stemme og svelging. Vi finner ut hva som er vanskelig, og lager en plan sammen med deg.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Button href="/kontakt">Bestill time</Button>
@@ -70,10 +71,10 @@ export default async function Home() {
           <div>
             <h2 id="intro" className="text-3xl font-bold md:text-4xl">Velkommen til Tromsølogopedene</h2>
             <p className="mt-5 text-lg">
-              Våre logopeder har lang erfaring innen logopedisk arbeid og tilbyr utredning, rådgiving og oppfølging ved språk-, tale- og kommunikasjonsvansker, afasi, stamming, stemmevansker, svelgevansker, ansiktslammelser, EILO, lyttetrening etter CI-operasjon, lese- og skrivevansker og alternativ og supplerende kommunikasjon.
+              Vi er logopeder med lang erfaring. Vi hjelper barn og voksne som strever med å snakke, forstå, lese, skrive eller svelge.
             </p>
             <p className="mt-4 text-lg">
-              Vi behandler på vårt kontor i {SITE.address.street} i {SITE.address.city}, eller etter avtale i hjemmet, barnehagen og skolen. Med henvisning fra lege dekker folketrygden de fleste behandlingene, uten egenandel.
+              Du finner oss i {SITE.address.street} i {SITE.address.city}. Etter avtale kan vi også komme hjem til deg, i barnehagen eller på skolen.
             </p>
             <Image src="/images/stock/mor-og-sonn-leser.jpg" alt="Mor og sønn leser en bok sammen i sofaen" width={1600} height={900} sizes="(min-width: 768px) 560px, 100vw" className="mt-8 aspect-[16/9] w-full rounded-2xl object-cover" />
           </div>
@@ -92,14 +93,14 @@ export default async function Home() {
       <section className="bg-tint py-16 md:py-20" aria-labelledby="tjenester">
         <div className="mx-auto max-w-site px-4 sm:px-6">
           <h2 id="tjenester" className="text-3xl font-bold md:text-4xl">Dette kan vi hjelpe deg med</h2>
-          <p className="mt-3 max-w-2xl text-lg">Hvert fagområde har egen side med informasjon om hva vi gjør og hvordan vi jobber.</p>
+          <p className="mt-3 max-w-2xl text-lg">Trykk på et område for å lese mer.</p>
           <ul className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {SERVICES.map((s) => (
               <li key={s.slug}>
                 <Link href={`/tjenester/${s.slug}`} className="group flex h-full flex-col rounded-2xl border border-line bg-white p-6 transition hover:-translate-y-0.5 hover:border-sage hover:shadow-lg">
                   <span className="grid h-14 w-14 place-items-center rounded-full bg-tint text-sage-dark"><ServiceIcon name={s.icon} /></span>
                   <h3 className="mt-5 text-xl font-bold">{s.name}</h3>
-                  <p className="mt-2 flex-1 text-ink/85">{s.short}</p>
+                  <p className="mt-2 flex-1 text-ink/85">{s.plain}</p>
                   <span className="mt-4 font-semibold text-blue group-hover:underline">Les mer →</span>
                 </Link>
               </li>
@@ -128,12 +129,12 @@ export default async function Home() {
       <section className="bg-sage-dark py-14 text-white md:py-16" aria-labelledby="helfo">
         <div className="mx-auto grid max-w-site gap-6 px-4 sm:px-6 md:grid-cols-[1fr_auto] md:items-center">
           <div>
-            <h2 id="helfo" className="!text-white text-3xl font-bold">Refusjon fra HELFO</h2>
+            <h2 id="helfo" className="!text-white text-3xl font-bold">Hva koster det?</h2>
             <p className="mt-3 max-w-2xl text-lg text-white/90">
               {HELFO_TEXT.band}
             </p>
           </div>
-          <Button href="/refusjon" variant="light">Les om refusjon</Button>
+          <Button href="/refusjon" variant="light">Les mer om HELFO</Button>
         </div>
       </section>
 
