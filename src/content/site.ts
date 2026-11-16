@@ -8,7 +8,10 @@ export const SITE = {
   description:
     "Tromsølogopedene er en logopedpraksis i Tromsø. Vi tilbyr utredning, rådgiving og behandling ved språk-, tale- og stemmevansker, stamming, svelgevansker, dysleksi og mer.",
   // TODO(client): fill these in. Left empty on purpose so nothing invented reaches schema/metadata.
+  // Visit address: used in schema, maps and everywhere patients look for where to go.
   address: { street: "Sykehusvegen 21", postalCode: "9019", city: "Tromsø", country: "NO" },
+  // Postal address: only for written correspondence (contact page, privacy policy). Never in schema.
+  postalAddress: { street: "Malmvegen 126", postalCode: "9022", city: "Krokelvdalen" },
   phone: "", // general phone
   email: "", // general email
   openingHours: "",
@@ -26,6 +29,8 @@ export const NAV = [
 
 /** "Sykehusvegen 21, 9019 Tromsø" */
 export const ADDRESS_LINE = `${SITE.address.street}, ${SITE.address.postalCode} ${SITE.address.city}`;
+/** "Malmvegen 126, 9022 Krokelvdalen" */
+export const POSTAL_ADDRESS_LINE = `${SITE.postalAddress.street}, ${SITE.postalAddress.postalCode} ${SITE.postalAddress.city}`;
 /** Plain link to Google Maps (no embed, so no third-party cookies on our pages). */
 export const MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(ADDRESS_LINE)}`;
 

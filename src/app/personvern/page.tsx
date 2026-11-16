@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHeader } from "@/components/PageHeader";
-import { ADDRESS_LINE, SITE } from "@/content/site";
+import { ADDRESS_LINE, POSTAL_ADDRESS_LINE, SITE } from "@/content/site";
 
 export const metadata: Metadata = {
   title: "Personvernerklæring",
@@ -32,7 +32,7 @@ export default function Personvern() {
           <p>Det offentlige nettstedet bruker ingen sporingsinformasjonskapsler. Innloggede administratorer får en nødvendig informasjonskapsel for innlogging. Se <Link href="/informasjonskapsler">retningslinjene for informasjonskapsler</Link> og <Link href="/vilkar">vilkårene for bruk av nettstedet</Link>.</p>
           <h2>Dine rettigheter</h2>
           <p>
-            Du har rett til innsyn, retting, sletting og begrensning av behandling, og til å trekke samtykket tilbake. Du kan klage til Datatilsynet (datatilsynet.no).
+            Du har rett til innsyn, retting, sletting og begrensning av behandling, og til å trekke samtykket tilbake. Krav kan sendes skriftlig til {SITE.name}, {POSTAL_ADDRESS_LINE}, eller du kan ringe oss. Du kan klage til Datatilsynet (datatilsynet.no).
           </p>
         </div>
       </section>

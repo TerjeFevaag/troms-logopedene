@@ -28,7 +28,8 @@ export default function Kontakt() {
             ))}
           </ul>
           <h2 className="mt-10 text-2xl font-bold">Hvor finner du oss</h2>
-          <address className="mt-3 text-lg not-italic">
+          <p className="mt-3 text-sm font-semibold uppercase tracking-wide text-sage-dark">Besøksadresse</p>
+          <address className="mt-1 text-lg not-italic">
             {SITE.name}<br />
             {SITE.address.street}<br />
             {SITE.address.postalCode} {SITE.address.city}
@@ -37,6 +38,13 @@ export default function Kontakt() {
             Vis i Google Maps<span className="sr-only"> (åpnes i ny fane)</span> →
           </a>
           <p className="mt-3">Vi behandler på vårt kontor i {SITE.address.street}, eller etter avtale i hjemmet, barnehagen og skolen.</p>
+          <p className="mt-6 text-sm font-semibold uppercase tracking-wide text-sage-dark">Postadresse</p>
+          <address className="mt-1 not-italic">
+            {SITE.name}<br />
+            {SITE.postalAddress.street}<br />
+            {SITE.postalAddress.postalCode} {SITE.postalAddress.city}
+          </address>
+          <p className="mt-2 text-sm text-ink/80">Kun for post. Behandlingen skjer på kontoret i {SITE.address.street}.</p>
           <Image src="/images/stock/forelder-og-barn-leser-i-telt.jpg" alt="Forelder og barn leser sammen i et lekentelt" width={1600} height={1067} sizes="(min-width: 1024px) 560px, 100vw" className="mt-8 aspect-[3/2] w-full rounded-2xl object-cover" />
         </div>
         <div>

@@ -65,7 +65,7 @@ Source: old `/informasjon/refusjonsavtale/`. Rules for treatment covered by HELF
 Link to helfo.no. The practice follows the Norwegian Association of Speech and Language Therapists (Norsk Logopedlag, NLL) ethical guidelines and HELFO's rates. Verify these still hold for the *new* company's agreement; do not claim a HELFO agreement as fact until the client confirms it (`TODO(client)`).
 
 ### Contact (old, for reference only; new company details are TODO)
-Old visit address: Siva Innovasjonssenter, Sykehusvegen 21, 9019 Tromsø. Old postal address: Malmvegen 126, 9022 Krokelvdalen. The new practice keeps the visit address (confirmed 2026-11-16). `TODO(client)`: org.nr, general phone, general email, opening hours, whether home/kindergarten/school visits are offered.
+Old visit address: Siva Innovasjonssenter, Sykehusvegen 21, 9019 Tromsø. Old postal address: Malmvegen 126, 9022 Krokelvdalen. The new practice keeps both: visit address in schema/maps, postal address only on /kontakt and /personvern (confirmed 2026-11-16). `TODO(client)`: org.nr, general phone, general email, opening hours, whether home/kindergarten/school visits are offered.
 
 ## 4. Brand and colour (from the logo)
 
