@@ -71,7 +71,7 @@ export default async function Home() {
           <div>
             <h2 id="intro" className="text-3xl font-bold md:text-4xl">Velkommen til oss</h2>
             <p className="mt-5 text-lg">
-              Logopedene våre har lang erfaring med barn, ungdom og voksne. Først finner logopeden ut hva som er vanskelig. Så får du en plan for behandlingen.
+              Logopedene våre har lang erfaring med barn, ungdom og voksne. Sammen finner vi ut hva som er vanskelig. Så får du en plan for behandlingen.
             </p>
             <p className="mt-4 text-lg">
               Du finner oss i {SITE.address.street} i {SITE.address.city}. Etter avtale kan vi også komme hjem til deg, i barnehagen eller på skolen.
