@@ -55,7 +55,7 @@ export default async function Home() {
           </div>
         </div>
         {/* Mobile uses the photo-only crop: hero.jpg has a white fade baked into its left half. */}
-        <div className="px-4 pb-10 sm:px-6 md:hidden">
+        <div className="px-4 pb-2 sm:px-6 md:hidden">
           <Image
             src="/images/hero-photo.jpg"
             alt="Logoped sammen med et barn i en logopedtime"
@@ -63,7 +63,7 @@ export default async function Home() {
             height={485}
             priority
             sizes="(max-width: 767px) 100vw, 1px"
-            className="aspect-[765/485] w-full rounded-2xl object-cover saturate-[.6]"
+            className="aspect-[4/3] w-full rounded-2xl object-cover object-[85%_center] saturate-[.6]"
           />
         </div>
       </section>
