@@ -31,15 +31,15 @@ export const HOME_FAQS: Faq[] = [
 export const ABOUT_FAQS: Faq[] = [
   {
     q: "Hvem er Tromsølogopedene?",
-    a: "Tromsølogopedene er en logopedpraksis i Tromsø drevet av logopedene Ingrid Steineger Dahl og Berit Småbakk, begge MNLL (medlem av Norsk Logopedlag).",
+    a: "Tromsølogopedene er en logopedpraksis i Tromsø drevet av logopedene Ingrid Steineger Dahl og Berit Småbakk, begge MNLF (medlem av Norsk Logopedforbund).",
   },
   {
-    q: "Hva betyr MNLL?",
-    a: "MNLL betyr medlem av Norsk Logopedlag, den faglige organisasjonen for logopeder i Norge.",
+    q: "Hva betyr MNLF?",
+    a: "MNLF betyr medlem av Norsk Logopedforbund, en fagorganisasjon for logopeder i Norge.",
   },
   {
     q: "Hvilke retningslinjer følger dere?",
-    a: "Vi arbeider etter Norsk Logopedlags etiske retningslinjer og de satsene for undersøkelse og behandling som HELFO har satt.",
+    a: "Vi arbeider etter Norsk Logopedforbunds etiske retningslinjer og de satsene for undersøkelse og behandling som HELFO har satt.",
   },
   {
     q: "Hva er forskjellen på logoped og audiopedagog eller spesialpedagog?",

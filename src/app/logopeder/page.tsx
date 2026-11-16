@@ -7,7 +7,7 @@ import { TEAM } from "@/content/team";
 
 export const metadata: Metadata = {
   title: "Våre logopeder i Tromsø",
-  description: "Møt logopedene Ingrid Steineger Dahl og Berit Småbakk, begge MNLL, hos Tromsølogopedene i Tromsø.",
+  description: "Møt logopedene Ingrid Steineger Dahl og Berit Småbakk, begge MNLF, hos Tromsølogopedene i Tromsø.",
   alternates: { canonical: "/logopeder" },
 };
 

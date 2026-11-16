@@ -34,14 +34,14 @@ export default function OmOss() {
           <Image src="/images/hero-photo.jpg" alt="Logoped sammen med et barn i en logopedtime" width={765} height={485} sizes="(min-width: 1024px) 768px, 100vw" priority className="!mb-10 aspect-[16/9] w-full rounded-2xl object-cover" />
           <h2 className="!mt-0">Hvem vi er</h2>
           <p>
-            Tromsølogopedene er en logopedpraksis i Tromsø drevet av logopedene Ingrid Steineger Dahl og Berit Småbakk. Begge er medlemmer av Norsk Logopedlag (MNLL) og har lang erfaring innen logopedisk arbeid med barn og voksne.
+            Tromsølogopedene er en logopedpraksis i Tromsø drevet av logopedene Ingrid Steineger Dahl og Berit Småbakk. Begge er medlemmer av Norsk Logopedforbund (MNLF) og har lang erfaring innen logopedisk arbeid med barn og voksne.
           </p>
           <h2>Slik jobber vi</h2>
           <p>
             Vi tilbyr utredning, rådgiving og oppfølging eller behandling ved språk-, tale- og kommunikasjonsvansker, afasi, stamming, stemmevansker, svelgevansker, ansiktslammelser, EILO, lyttetrening etter CI-operasjon, lese- og skrivevansker og alternativ og supplerende kommunikasjon.
           </p>
           <p>
-            Vi behandler på vårt kontor i {ADDRESS_LINE}, eller etter avtale i hjemmet, barnehagen og skolen. Vi arbeider etter Norsk Logopedlags etiske retningslinjer og de satsene for undersøkelse og behandling som HELFO har satt.
+            Vi behandler på vårt kontor i {ADDRESS_LINE}, eller etter avtale i hjemmet, barnehagen og skolen. Vi arbeider etter Norsk Logopedforbunds etiske retningslinjer og de satsene for undersøkelse og behandling som HELFO har satt.
           </p>
           <h2>Refusjon</h2>
           <p>

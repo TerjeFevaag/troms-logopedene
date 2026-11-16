@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 
 // Keep these short and plain: many visitors have reading and writing difficulties.
 const FACTS = [
-  { big: String(TEAM.length), label: "logopeder", text: "Alle er medlem av Norsk Logopedlag." },
+  { big: String(TEAM.length), label: "logopeder", text: "Alle er medlem av Norsk Logopedforbund." },
   { big: String(SERVICES.length), label: "fagområder", text: "Fra språk og stamming til svelging." },
   { big: "Alle", label: "aldre", text: "Vi hjelper både barn og voksne." },
   { big: "HELFO", label: "dekker det meste", text: "Med henvisning fra lege betaler du ingen egenandel." },

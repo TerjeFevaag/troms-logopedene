@@ -14,8 +14,8 @@ Read this fully before writing any code. It is the source of truth for the build
 ## 2. Hard rules (from the client brief)
 
 1. Include **only** these two therapists:
-   - **Ingrid Steineger Dahl**, Logoped MNLL
-   - **Berit Småbakk**, Logoped MNLL
+   - **Ingrid Steineger Dahl**, Logoped MNLF
+   - **Berit Småbakk**, Logoped MNLF
 2. **Do NOT** include the other two therapists from the old practice anywhere (their names are deliberately not recorded in this public repo; the client brief has them): no names, photos, bios, emails, phone numbers, or mentions in alt text, schema, llms.txt or sitemap.
 3. **Every service gets its own page.** Do not put services on one long page like the old site did.
 4. **FAQs must appear on:** Hjem, Om oss, and every service page. Each FAQ block also emits `FAQPage` JSON-LD that matches the visible text exactly.
@@ -31,11 +31,11 @@ WordPress + Yoast. Only 7 URLs: `/`, `/tjenester/`, `/logopeder/`, `/informasjon
 Old tagline: "Utredning, rådgiving og oppfølging". Practice treats at the clinic, or by agreement at home, in kindergarten and at school. Therapists have a HELFO refusal agreement, so most users get treatment covered through Folketrygden; the practice helps with the application and forwards papers to HELFO on request.
 
 ### The two therapists (only these)
-**Ingrid Steineger Dahl**, logoped MNLL
+**Ingrid Steineger Dahl**, logoped MNLF
 - Phone (old site): 466 68 638. Email on old site is on the old domain; use a `TODO(client)` for the new address.
 - Treats children and adults with: language and speech difficulties; language difficulties associated with biomedical conditions (LDx); alternative and augmentative communication (AAC) / communication aids; cochlea implant (listening training); voice difficulties (children).
 
-**Berit Småbakk**, logoped MNLL
+**Berit Småbakk**, logoped MNLF
 - Phone (old site): 911 82 401. Email: `TODO(client)` for new address.
 - Treats children and adults with: language and speech difficulties; fluency disorders (stuttering and cluttering); **certified in the Lidcombe Programme** (parent guidance/treatment of early stuttering, ages 3–6) and **PCI stuttering treatment** (parent–child therapy, ages 2–7); aphasia, dysarthria and dysphagia; **certified in the McNeill Dysphagia Theory Program**; facial paralysis; voice difficulties; VCD / EILO / stridor; assessment (LOGOS) of reading and writing difficulties/dyslexia, plus documentation and help applying for spelling software for dyslexics.
 
@@ -64,7 +64,7 @@ The old site's rules (PPT refusal for under-18s, "refusjonsavtale", "we help wit
 2. No avslag from kommune/PPT required for any age, but no stønad if the patient gets the same help from kommune/fylkeskommune.
 3. No egenandel, no 25-treatment limit, term is "avtale om direkte oppgjør". Home treatment only covered when health prevents attending.
 4. Dysleksi, lese- og skrivevansker and dyskalkuli are NOT covered (service `dysleksi` has `helfoCovered: false`).
-The practice follows the Norwegian Association of Speech and Language Therapists (Norsk Logopedlag, NLL) ethical guidelines and HELFO's rates. The client confirmed on 2026-11-16 that the practice has avtale om direkte oppgjør with HELFO.
+The practice follows the Norwegian Association of Speech and Language Therapists (Norsk Logopedforbund, NLF) ethical guidelines and HELFO's rates. The client confirmed on 2026-11-16 that the practice has avtale om direkte oppgjør with HELFO.
 
 ### Contact (old, for reference only; new company details are TODO)
 Old visit address: Siva Innovasjonssenter, Sykehusvegen 21, 9019 Tromsø. Old postal address: Malmvegen 126, 9022 Krokelvdalen. The new practice keeps both: visit address in schema/maps, postal address only on /kontakt and /personvern (confirmed 2026-11-16). `TODO(client)`: org.nr, general phone, general email, opening hours, whether home/kindergarten/school visits are offered.
@@ -187,7 +187,7 @@ Add 301 redirect notes for the client: the old domain is separate and stays with
 - Home: `WebPage` + `FAQPage` (+ the above).
 - Om oss: `AboutPage` + `FAQPage`.
 - Each service: `Service` (or `MedicalTherapy`/`MedicalProcedure` where accurate) with `provider` referencing the organisation `@id`, `areaServed`, plus `FAQPage` and `BreadcrumbList`.
-- Therapists: `Person`/`Physician`-style (`Person` with `jobTitle: Logoped MNLL`, `worksFor`, `knowsAbout`, `image`) on each therapist page.
+- Therapists: `Person`/`Physician`-style (`Person` with `jobTitle: Logoped MNLF`, `worksFor`, `knowsAbout`, `image`) on each therapist page.
 - Articles: `Article`/`BlogPosting` with `headline`, `datePublished`, `dateModified`, `author`, `image`, `publisher`.
 - Use stable `@id` anchors (`https://<domain>/#organization`) so entities link together. Schema must mirror visible content (no hidden FAQs, no fake ratings or reviews; do not add `aggregateRating` unless real, verifiable reviews exist).
 - FAQ content: 5–8 real questions per page, answered concisely (e.g. "Trenger jeg henvisning?", "Dekker HELFO behandlingen?", "Hva koster det?", "Hvor lang tid tar det å få time?", "Tilbyr dere behandling hjemme eller i barnehage/skole?", "Hvordan foregår første time?"). Never state prices, waiting times or coverage as fact without client confirmation.
@@ -198,9 +198,9 @@ Add 301 redirect notes for the client: the old domain is separate and stays with
 
 ## 9. Content and compliance
 
-- Healthcare marketing in Norway: be factual, no guarantees of outcomes, no misleading claims. Use "Logoped MNLL" (Medlem av Norsk Logopedlag) exactly as the client wrote it.
+- Healthcare marketing in Norway: be factual, no guarantees of outcomes, no misleading claims. Use "Logoped MNLF" (Medlem av Norsk Logopedforbund) exactly as the client wrote it.
 - GDPR/personvern: proper privacy policy naming the data controller, purposes, legal basis, retention, rights, processors (Vercel, Sanity, email provider). Cookie consent only if needed. Contact form must not invite sensitive health data.
-- Cite helfo.no for refusjon details. Refer to Norsk Logopedlag where relevant.
+- Cite helfo.no for refusjon details. Refer to Norsk Logopedforbund where relevant.
 - Tone: warm, professional, clear. Short paragraphs. Parents and adult patients are the audience.
 - **Therapist photos (user decision): reuse Ingrid's and Berit's photos from the old site.** Already downloaded to `public/images/team/ingrid-steineger-dahl.jpg` and `berit-smabakk.jpg`. They are only 207×207px, so never display them larger than ~200px wide (or ~100px on high-DPI-unaware layouts), keep them as small round or square portraits, and flag to the client that higher-resolution originals would be better. Self-host them, never hotlink. Only these two photos; the other two therapists' photos must not be downloaded or committed.
 - **Other imagery (user decision): use photos of Norwegian/Nordic-looking people in speech therapy settings, especially children with a therapist, families, and adults in voice/swallowing/aphasia contexts.**
