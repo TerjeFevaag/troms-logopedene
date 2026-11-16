@@ -64,7 +64,7 @@ The old site's rules (PPT refusal for under-18s, "refusjonsavtale", "we help wit
 2. No avslag from kommune/PPT required for any age, but no stønad if the patient gets the same help from kommune/fylkeskommune.
 3. No egenandel, no 25-treatment limit, term is "avtale om direkte oppgjør". Home treatment only covered when health prevents attending.
 4. Dysleksi, lese- og skrivevansker and dyskalkuli are NOT covered (service `dysleksi` has `helfoCovered: false`).
-The practice follows the Norwegian Association of Speech and Language Therapists (Norsk Logopedlag, NLL) ethical guidelines and HELFO's rates. Verify these still hold for the *new* company's agreement; do not claim a HELFO agreement as fact until the client confirms it (`TODO(client)`).
+The practice follows the Norwegian Association of Speech and Language Therapists (Norsk Logopedlag, NLL) ethical guidelines and HELFO's rates. The client confirmed on 2026-11-16 that the practice has avtale om direkte oppgjør with HELFO.
 
 ### Contact (old, for reference only; new company details are TODO)
 Old visit address: Siva Innovasjonssenter, Sykehusvegen 21, 9019 Tromsø. Old postal address: Malmvegen 126, 9022 Krokelvdalen. The new practice keeps both: visit address in schema/maps, postal address only on /kontakt and /personvern (confirmed 2026-11-16). `TODO(client)`: org.nr, general phone, general email, opening hours, whether home/kindergarten/school visits are offered.
@@ -231,7 +231,7 @@ Add 301 redirect notes for the client: the old domain is separate and stays with
 1. Vector logo (SVG) or transparent PNG (current file has a baked-in checkerboard).
 2. New company details: org.nr, general phone and email, opening hours. (Visit address resolved: Sykehusvegen 21, 9019 Tromsø, set in `src/content/site.ts`.)
 3. New email addresses for Ingrid and Berit (old ones are on the old practice's domain).
-4. Do both therapists still hold the HELFO refusal agreement under the new company? Wording for the refusjon page.
+4. ~~HELFO agreement~~ Resolved 2026-11-16: the practice has avtale om direkte oppgjør with HELFO. New therapists must have it too before the site lists them.
 5. Domain name (e.g. `tromsologopedene.no`) and who controls DNS.
 6. Higher-resolution photos of Ingrid and Berit (old ones are 207×207px) and of the clinic rooms. Old photos are being reused per the user's decision. Confirm the client is fine with that.
 7. Whether home, kindergarten and school visits continue, and any prices or waiting-time information they want published.

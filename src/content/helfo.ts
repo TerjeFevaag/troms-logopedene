@@ -6,7 +6,7 @@
 // Key points: referral from any doctor with diagnosis (ICPC-2 or ICD-10); no application to HELFO and no
 // avslag from kommune/PPT required (since 2022); no egenandel; no 25-treatment limit; no stønad if the
 // patient gets the same help from kommune/fylkeskommune; dysleksi/dyskalkuli are NOT covered.
-// TODO(client): confirm every therapist has "avtale om direkte oppgjør" with HELFO under the new company.
+// Confirmed by the client 2026-11-16: the practice has "avtale om direkte oppgjør" with HELFO.
 
 export const HELFO_SOURCES = {
   forskrift: "https://lovdata.no/dokument/SF/forskrift/2021-12-17-3709",
