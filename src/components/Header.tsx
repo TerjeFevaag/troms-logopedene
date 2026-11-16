@@ -68,9 +68,9 @@ export function Header() {
       </div>
       <header className="sticky top-0 z-50 border-b border-line bg-white/95 backdrop-blur">
         <div className="relative mx-auto flex h-[72px] max-w-site items-center justify-between gap-4 px-4 sm:px-6">
-          <Link href="/" className="flex items-center gap-3" aria-label="Tromsølogopedene, til forsiden">
+          <Link href="/" className="flex shrink-0 items-center gap-3" aria-label="Tromsølogopedene, til forsiden">
             <Image src="/images/logo-mark.png" alt="" width={52} height={45} priority className="h-11 w-auto" />
-            <span className="text-xl font-bold tracking-tight text-navy sm:text-2xl">Tromsølogopedene</span>
+            <span className="text-xl font-bold tracking-tight text-navy sm:text-2xl lg:text-xl xl:text-2xl">Tromsølogopedene</span>
           </Link>
 
           <nav aria-label="Hovedmeny" className="hidden items-center gap-1 lg:flex">
@@ -80,7 +80,7 @@ export function Header() {
                 aria-expanded={mega}
                 aria-controls="mega-tjenester"
                 onClick={() => setMega((v) => !v)}
-                className="flex items-center gap-1 rounded-full px-4 py-2 font-semibold text-navy hover:bg-tint"
+                className="flex items-center gap-1 whitespace-nowrap rounded-full px-3 py-2 font-semibold text-navy hover:bg-tint xl:px-4"
               >
                 Tjenester
                 <svg viewBox="0 0 20 20" className={`h-4 w-4 transition-transform ${mega ? "rotate-180" : ""}`} fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
@@ -117,12 +117,12 @@ export function Header() {
                 key={n.href}
                 href={n.href}
                 aria-current={pathname.startsWith(n.href) ? "page" : undefined}
-                className={`rounded-full px-4 py-2 font-semibold hover:bg-tint ${pathname.startsWith(n.href) ? "text-blue" : "text-navy"}`}
+                className={`whitespace-nowrap rounded-full px-3 py-2 font-semibold hover:bg-tint xl:px-4 ${pathname.startsWith(n.href) ? "text-blue" : "text-navy"}`}
               >
                 {n.label}
               </Link>
             ))}
-            <Link href="/kontakt" className="ml-2 rounded-full bg-blue px-5 py-2.5 font-semibold text-white hover:bg-blue-dark">
+            <Link href="/kontakt" className="ml-2 whitespace-nowrap rounded-full bg-blue px-5 py-2.5 font-semibold text-white hover:bg-blue-dark">
               Bestill time
             </Link>
           </nav>

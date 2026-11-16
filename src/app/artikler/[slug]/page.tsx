@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { ContactBlock } from "@/components/ContactBlock";
 import { JsonLd } from "@/components/JsonLd";
@@ -55,8 +56,15 @@ export default async function ArticlePage({ params }: Props) {
       <article className="mx-auto max-w-site px-4 py-14 sm:px-6">
         <div className="max-w-3xl">
         {a.coverImageUrl && (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img src={a.coverImageUrl} alt={a.coverAlt ?? ""} className="mb-8 w-full rounded-2xl" />
+          <Image
+            src={a.coverImageUrl}
+            alt={a.coverAlt ?? ""}
+            width={1200}
+            height={675}
+            priority
+            sizes="(min-width: 800px) 768px, 100vw"
+            className="mb-8 h-auto w-full rounded-2xl"
+          />
         )}
         <div className="prose-site" dangerouslySetInnerHTML={{ __html: a.body }} />
         </div>

@@ -146,8 +146,9 @@ export default async function Home() {
             {articles.map((a) => (
               <li key={a.id} className="overflow-hidden rounded-2xl border border-line">
                 {a.coverImageUrl && (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img src={a.coverImageUrl} alt={a.coverAlt ?? ""} className="aspect-video w-full object-cover" />
+                  <div className="relative aspect-video">
+                    <Image src={a.coverImageUrl} alt={a.coverAlt ?? ""} fill sizes="(min-width: 1024px) 380px, (min-width: 640px) 50vw, 100vw" className="object-cover" />
+                  </div>
                 )}
                 <div className="p-5">
                   <p className="text-sm text-ink/70">{new Intl.DateTimeFormat("nb-NO", { dateStyle: "long" }).format(a.publishedAt ?? a.updatedAt)}</p>
