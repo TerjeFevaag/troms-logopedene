@@ -8,7 +8,7 @@ import { SERVICES } from "@/content/services";
 export const metadata: Metadata = {
   title: "Tjenester: logoped i Tromsø",
   description:
-    "Se alle tjenester hos Tromsølogopedene: språkvansker, stamming, stemmevansker, svelgevansker, ansiktslammelse, dysleksi, EILO/VCD, lyttetrening etter CI og AKK.",
+    "Se alle tjenester hos Tromsølogopedene: språkvansker, stamming, stemmevansker, svelgevansker, ansiktslammelse, dysleksi, EILO/VCD, lyttetrening etter CI og ASK.",
   alternates: { canonical: "/tjenester" },
 };
 

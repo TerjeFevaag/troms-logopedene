@@ -13,6 +13,10 @@ const nextConfig: NextConfig = {
     formats: ["image/avif", "image/webp"],
     remotePatterns: [{ protocol: "https", hostname: "*.public.blob.vercel-storage.com" }],
   },
+  async redirects() {
+    // AKK was renamed to the correct abbreviation ASK.
+    return [{ source: "/tjenester/akk", destination: "/tjenester/ask", permanent: true }];
+  },
   async headers() {
     return [
       { source: "/:path*", headers: securityHeaders },

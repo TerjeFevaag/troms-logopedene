@@ -31,7 +31,7 @@ export const TEAM: Therapist[] = [
       "Stemmevansker (barn)",
     ],
     certifications: [],
-    services: ["sprakvansker", "akk", "lyttetrening-ci", "stemmevansker"],
+    services: ["sprakvansker", "ask", "lyttetrening-ci", "stemmevansker"],
   },
   {
     slug: "berit-smabakk",

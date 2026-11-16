@@ -54,9 +54,9 @@ Source copy is from the old `/tjenester/`. Expand each into a full page (what it
 | 6 | Lese- og skrivevansker / dysleksi | `/tjenester/dysleksi` | LOGOS computer-based assessment with other assessments; targeted follow-up; help with spelling-software applications. |
 | 7 | VCD / EILO / stridor | `/tjenester/eilo-vcd` | Assessment and follow-up: conversation, relaxation, learning concrete exercises. EILO = effort-induced (inspiratory) laryngeal obstruction (old site text says "anstrengelsesutløste pustevansker"). |
 | 8 | Lyttetrening etter CI-operasjon | `/tjenester/lyttetrening-ci` | After referral from competence centre/hospital: speech-language follow-up and listening training after implant activation. |
-| 9 | Alternativ og supplerende kommunikasjon (AKK) | `/tjenester/akk` | For severe language and speech difficulties: fitting and trialling by a therapist with specialist competence. |
+| 9 | Alternativ og supplerende kommunikasjon (ASK) | `/tjenester/ask` | For severe language and speech difficulties: fitting and trialling by a therapist with specialist competence. |
 
-Only list a service as offered if at least one of the two therapists covers it. Check the bios above: everything in the table is covered by Ingrid and/or Berit except none flagged; Dysleksi and EILO/VCD are Berit; AKK and CI are Ingrid. Show "Hvem tilbyr dette" per service pointing to the right therapist(s).
+Only list a service as offered if at least one of the two therapists covers it. Check the bios above: everything in the table is covered by Ingrid and/or Berit except none flagged; Dysleksi and EILO/VCD are Berit; ASK and CI are Ingrid. Show "Hvem tilbyr dette" per service pointing to the right therapist(s).
 
 ### HELFO / refusjon (own page: `/refusjon`)
 The old site's rules (PPT refusal for under-18s, "refusjonsavtale", "we help with the application") were outdated. Rules verified 2026-11-16 against FOR-2021-12-17-3709 (in force 1 Jan 2022) and Helsedirektoratet's rundskriv; all site wording comes from `src/content/helfo.ts`:
@@ -148,7 +148,7 @@ Pixel-perfect means: consistent 4/8px spacing scale, a defined container width (
 /tjenester/dysleksi
 /tjenester/eilo-vcd
 /tjenester/lyttetrening-ci
-/tjenester/akk
+/tjenester/ask
 /logopeder                Our two therapists (index)
 /logopeder/ingrid-steineger-dahl
 /logopeder/berit-smabakk

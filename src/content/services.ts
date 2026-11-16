@@ -77,7 +77,7 @@ export const SERVICES: Service[] = [
         a: "Ja. For barn er foreldrenes deltakelse ofte en viktig del av opplegget, og vi gir veiledning slik at øvingen kan fortsette hjemme.",
       },
     ],
-    related: ["akk", "dysleksi", "lyttetrening-ci"],
+    related: ["ask", "dysleksi", "lyttetrening-ci"],
   },
   {
     slug: "stamming",
@@ -358,17 +358,17 @@ export const SERVICES: Service[] = [
         a: "Ingrid Steineger Dahl følger opp lyttetrening etter cochlea-implantat.",
       },
     ],
-    related: ["sprakvansker", "akk"],
+    related: ["sprakvansker", "ask"],
   },
   {
-    slug: "akk",
-    name: "Alternativ og supplerende kommunikasjon (AKK)",
+    slug: "ask",
+    name: "Alternativ og supplerende kommunikasjon (ASK)",
     short: "Tilpassing og utprøving av kommunikasjonshjelpemidler ved alvorlige språk- og talevansker.",
     plain: "Andre måter å kommunisere på, når det er vanskelig å snakke.",
-    metaTitle: "AKK: alternativ og supplerende kommunikasjon",
+    metaTitle: "ASK: alternativ og supplerende kommunikasjon",
     metaDescription:
-      "Logoped i Tromsø for alternativ og supplerende kommunikasjon (AKK): tilpassing og utprøving av kommunikasjonshjelpemidler.",
-    lead: "AKK er kommunikasjonsstøtte for personer med alvorlige språk- og talevansker. Vi tilpasser og prøver ut løsninger sammen med deg og dine nærmeste.",
+      "Logoped i Tromsø for alternativ og supplerende kommunikasjon (ASK): tilpassing og utprøving av kommunikasjonshjelpemidler.",
+    lead: "ASK er kommunikasjonsstøtte for personer med alvorlige språk- og talevansker. Vi tilpasser og prøver ut løsninger sammen med deg og dine nærmeste.",
     icon: "aac",
     forWho: [
       "Barn og voksne med alvorlige språk- og talevansker",
@@ -384,12 +384,12 @@ export const SERVICES: Service[] = [
     ],
     faqs: [
       {
-        q: "Hva betyr AKK?",
-        a: "AKK betyr alternativ og supplerende kommunikasjon, for eksempel tegn, bilder, kommunikasjonsbøker og talemaskiner.",
+        q: "Hva betyr ASK?",
+        a: "ASK betyr alternativ og supplerende kommunikasjon, for eksempel tegn, bilder, kommunikasjonsbøker og talemaskiner.",
       },
       {
-        q: "Kan AKK hindre at barnet lærer å snakke?",
-        a: "Nei. Forskning tyder på at AKK ikke hindrer talen, og den kan i stedet støtte språkutviklingen. Logopeden vurderer hva som passer.",
+        q: "Kan ASK hindre at barnet lærer å snakke?",
+        a: "Nei. Forskning tyder på at ASK ikke hindrer talen, og den kan i stedet støtte språkutviklingen. Logopeden vurderer hva som passer.",
       },
     ],
     related: ["sprakvansker", "lyttetrening-ci"],
