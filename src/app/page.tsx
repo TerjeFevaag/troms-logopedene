@@ -47,7 +47,7 @@ export default async function Home() {
           <p className="text-sm font-semibold uppercase tracking-wider text-sage-dark">{SITE.slogan}</p>
           <h1 className="mt-4 max-w-xl text-4xl font-bold sm:text-5xl lg:text-6xl">Logoped i Tromsø for barn og voksne</h1>
           <p className="mt-5 max-w-lg text-lg text-ink md:text-xl">
-            Vi finner ut hva som er vanskelig, og lager en plan sammen med deg.
+            Vi finner årsaken og lager en plan for behandlingen. Du og familien er med hele veien.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Button href="/kontakt">Bestill time</Button>
