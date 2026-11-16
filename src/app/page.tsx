@@ -40,7 +40,7 @@ export default async function Home() {
           fill
           priority
           sizes="(min-width: 768px) 100vw, 1px"
-          className="-z-10 hidden object-cover md:block md:object-right"
+          className="-z-10 hidden object-cover saturate-[.6] md:block md:object-right"
         />
         <div className="absolute inset-0 -z-10 hidden bg-gradient-to-r from-white from-20% via-white/55 via-45% to-transparent md:block" aria-hidden="true" />
         <div className="mx-auto max-w-site px-4 pb-8 pt-12 sm:px-6 md:py-24 lg:py-28">
@@ -61,7 +61,7 @@ export default async function Home() {
             fill
             priority
             sizes="(max-width: 767px) 100vw, 1px"
-            className="object-cover object-[85%_center]"
+            className="object-cover object-[85%_center] saturate-[.6]"
           />
         </div>
       </section>
