@@ -36,6 +36,7 @@ export default async function Home() {
       <section className="relative isolate overflow-hidden bg-white">
         <Image
           src="/images/hero.jpg"
+          quality={90}
           alt="Logoped sammen med et barn i en logopedtime"
           fill
           priority
@@ -58,6 +59,7 @@ export default async function Home() {
         <div className="px-4 pb-2 sm:px-6 md:hidden">
           <Image
             src="/images/hero-photo.jpg"
+            quality={90}
             alt="Logoped sammen med et barn i en logopedtime"
             width={765}
             height={485}
