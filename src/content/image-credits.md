@@ -6,7 +6,7 @@ Photos below are to be reviewed by the client before launch.
 | File | Source | Photographer | Licence | Used on |
 |---|---|---|---|---|
 | `public/images/stock/mor-og-sonn-leser.jpg` | https://unsplash.com/photos/mother-and-son-reading-a-book-together-on-the-couch-bQz9R-K_Q40 | Vitaly Gariev | Unsplash License (free, commercial use) | Hjem, Språkvansker |
-| `public/images/stock/forelder-og-barn-leser-i-telt.jpg` | https://unsplash.com/photos/a-woman-reading-a-book-to-a-child-fQ-Hp3waO1A | Vitaly Gariev | Unsplash License (free, commercial use) | Dysleksi, Kontakt |
+| `public/images/stock/forelder-og-barn-leser-i-telt.jpg` | https://unsplash.com/photos/a-woman-reading-a-book-to-a-child-fQ-Hp3waO1A | Vitaly Gariev | Unsplash License (free, commercial use) | Dysleksi |
 | `public/images/articles/nar-bor-du-ta-kontakt-med-logoped-for-barnet.jpg` | https://unsplash.com/photos/u0zTce7KNlY | Stephen Andrews | Unsplash License | Artikkel: Når bør du ta kontakt med logoped |
 | `public/images/articles/stamming-hos-barn-rad-til-foreldre.jpg` | crop of the tent photo above | Vitaly Gariev | Unsplash License | Artikkel: Stamming hos små barn |
 | `public/images/articles/slik-far-du-logopedbehandling-dekket-av-helfo.jpg` | https://unsplash.com/photos/_zbqco3m7dA | Vitaly Gariev | Unsplash License | Artikkel: HELFO |

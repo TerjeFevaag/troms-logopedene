@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { ContactForm } from "@/components/ContactForm";
 import { PageHeader } from "@/components/PageHeader";
 import { MAPS_URL, SITE } from "@/content/site";
@@ -45,7 +44,6 @@ export default function Kontakt() {
             {SITE.postalAddress.postalCode} {SITE.postalAddress.city}
           </address>
           <p className="mt-2 text-sm text-ink/80">Kun for post. Behandlingen skjer på kontoret i {SITE.address.street}.</p>
-          <Image src="/images/stock/forelder-og-barn-leser-i-telt.jpg" alt="Forelder og barn leser sammen i et lekentelt" width={1600} height={1067} sizes="(min-width: 1024px) 560px, 100vw" className="mt-8 aspect-[3/2] w-full rounded-2xl object-cover" />
         </div>
         <div>
           <h2 className="text-2xl font-bold">Send en melding</h2>
