@@ -54,14 +54,16 @@ export default async function Home() {
             <Button href="/tjenester" variant="outline">Se tjenester</Button>
           </div>
         </div>
-        <div className="relative h-56 w-full sm:h-72 md:hidden">
+        {/* Mobile uses the photo-only crop: hero.jpg has a white fade baked into its left half. */}
+        <div className="px-4 pb-10 sm:px-6 md:hidden">
           <Image
-            src="/images/hero.jpg"
+            src="/images/hero-photo.jpg"
             alt="Logoped sammen med et barn i en logopedtime"
-            fill
+            width={765}
+            height={485}
             priority
             sizes="(max-width: 767px) 100vw, 1px"
-            className="object-cover object-[85%_center] saturate-[.6]"
+            className="aspect-[765/485] w-full rounded-2xl object-cover saturate-[.6]"
           />
         </div>
       </section>
