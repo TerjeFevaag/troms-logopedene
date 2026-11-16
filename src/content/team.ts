@@ -4,7 +4,7 @@ export type Therapist = {
   title: string;
   photo: string;
   phone: string; // from old site, confirm with client
-  email: string; // TODO(client) new address
+  email: string; // fornavn@tromsologopedene.no
   lead: string;
   intro: string;
   treats: string[];
@@ -19,7 +19,7 @@ export const TEAM: Therapist[] = [
     title: "Logoped MNLF",
     photo: "/images/team/ingrid-steineger-dahl.jpg",
     phone: "466 68 638",
-    email: "",
+    email: "ingrid@tromsologopedene.no",
     lead: "Behandling og oppfølging av barn og voksne med språk- og talevansker.",
     intro:
       "Ingrid er logoped MNLF og arbeider med barn og voksne. Hun har særlig kompetanse på alternativ og supplerende kommunikasjon, språkvansker knyttet til biomedisinske tilstander og lyttetrening etter cochlea-implantat.",
@@ -39,7 +39,7 @@ export const TEAM: Therapist[] = [
     title: "Logoped MNLF",
     photo: "/images/team/berit-smabakk.jpg",
     phone: "911 82 401",
-    email: "",
+    email: "berit@tromsologopedene.no",
     lead: "Behandling og oppfølging av barn og voksne, med særlig kompetanse på stamming og svelgevansker.",
     intro:
       "Berit er logoped MNLF og behandler barn og voksne. Hun er sertifisert i Lidcombe-programmet, PCI stammebehandling og McNeill Dysphagia Theory Program, og utreder lese- og skrivevansker med LOGOS.",

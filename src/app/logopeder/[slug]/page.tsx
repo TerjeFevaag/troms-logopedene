@@ -42,7 +42,8 @@ export default async function TherapistPage({ params }: Props) {
         lead={t.lead}
       >
         <Button href={`tel:+47${t.phone.replace(/\s/g, "")}`}>Ring {t.phone}</Button>
-        <Button href="/kontakt" variant="outline">Send melding</Button>
+        {/* Opens the therapist's own email once the client supplies it; until then, the contact form. */}
+        <Button href={t.email ? `mailto:${t.email}` : "/kontakt"} variant="outline">{t.email ? "Send e-post" : "Send melding"}</Button>
       </PageHeader>
       <div className="mx-auto grid max-w-site gap-10 px-4 py-14 sm:px-6 md:grid-cols-[200px_1fr]">
         <Image src={t.photo} alt={`${t.name}, ${t.title}`} width={200} height={200} className="h-[200px] w-[200px] rounded-2xl object-cover" priority />
