@@ -61,8 +61,8 @@ export default async function Home() {
             src="/images/hero-photo.jpg"
             quality={90}
             alt="Logoped sammen med et barn i en logopedtime"
-            width={765}
-            height={485}
+            width={1600}
+            height={1014}
             priority
             sizes="(max-width: 767px) 100vw, 1px"
             className="aspect-[4/3] w-full rounded-2xl object-cover object-[85%_center]"

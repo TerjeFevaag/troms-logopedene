@@ -31,7 +31,7 @@ export default function OmOss() {
 
       <section className="mx-auto grid max-w-site gap-12 px-4 py-14 sm:px-6 lg:grid-cols-[1fr_380px]">
         <div className="prose-site max-w-3xl">
-          <Image src="/images/hero-photo.jpg" alt="Logoped sammen med et barn i en logopedtime" width={765} height={485} sizes="(min-width: 1024px) 768px, 100vw" priority className="!mb-10 aspect-[16/9] w-full rounded-2xl object-cover" />
+          <Image src="/images/hero-photo.jpg" alt="Logoped sammen med et barn i en logopedtime" width={1600} height={1014} sizes="(min-width: 1024px) 768px, 100vw" priority className="!mb-10 aspect-[16/9] w-full rounded-2xl object-cover" />
           <h2 className="!mt-0">Hvem vi er</h2>
           <p>
             Tromsølogopedene er en logopedpraksis i Tromsø drevet av logopedene Ingrid Steineger Dahl og Berit Småbakk. Begge er medlemmer av Norsk Logopedforbund (MNLF) og har lang erfaring innen logopedisk arbeid med barn og voksne.
