@@ -47,7 +47,7 @@ export default async function Home() {
           <p className="text-sm font-semibold uppercase tracking-wider text-sage-dark">{SITE.slogan}</p>
           <h1 className="mt-4 max-w-xl text-4xl font-bold sm:text-5xl lg:text-6xl">Logoped i Tromsø for barn og voksne</h1>
           <p className="mt-5 max-w-lg text-lg text-ink md:text-xl">
-            Vi finner årsaken og lager en plan for behandlingen. Du og familien er med hele veien.
+            Strever du eller barnet ditt med å snakke, forstå eller svelge? Vi kan hjelpe.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Button href="/kontakt">Bestill time</Button>
@@ -71,7 +71,7 @@ export default async function Home() {
           <div>
             <h2 id="intro" className="text-3xl font-bold md:text-4xl">Velkommen til oss</h2>
             <p className="mt-5 text-lg">
-              Vi er logopeder med lang erfaring. Vi hjelper barn, ungdom og voksne som strever med å snakke, forstå, lese, skrive eller svelge.
+              Logopedene våre har lang erfaring med barn, ungdom og voksne. Først finner logopeden ut hva som er vanskelig. Så får du en plan for behandlingen.
             </p>
             <p className="mt-4 text-lg">
               Du finner oss i {SITE.address.street} i {SITE.address.city}. Etter avtale kan vi også komme hjem til deg, i barnehagen eller på skolen.
