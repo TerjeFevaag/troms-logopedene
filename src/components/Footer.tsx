@@ -18,7 +18,7 @@ export function Footer() {
               <Image src="/images/logo.png" alt="Tromsølogopedene" width={160} height={131} className="h-auto w-36" />
             </div>
             <p className="mt-5 max-w-xs text-sm leading-relaxed">
-              {SITE.tagline}. Logopedpraksis i Tromsø for barn og voksne.
+              {SITE.tagline}. Logopedpraksis i Tromsø for barn, ungdom og voksne.
             </p>
             <Link
               href="/kontakt"
