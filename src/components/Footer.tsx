@@ -92,7 +92,7 @@ export function Footer() {
           </ul>
           <p>
             Nettside utviklet av{" "}
-            <a href="https://fevaag.no" target="_blank" rel="noopener" className="font-semibold text-white underline underline-offset-2 hover:no-underline">
+            <a href="https://fevaag.no" target="_blank" rel="noopener" className="underline underline-offset-2 hover:text-white hover:no-underline">
               Fevaag Web Consulting
             </a>
             .
