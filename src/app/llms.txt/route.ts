@@ -1,5 +1,5 @@
 import { SERVICES } from "@/content/services";
-import { SITE, abs } from "@/content/site";
+import { ADDRESS_LINE, SITE, abs } from "@/content/site";
 import { TEAM } from "@/content/team";
 import { getPublishedArticles } from "@/lib/articles";
 
@@ -12,7 +12,7 @@ export async function GET() {
     "",
     `> ${SITE.description} Nettstedet er på norsk (bokmål).`,
     "",
-    "Logopedpraksis i Tromsø for barn og voksne. Vi behandler på kontoret, eller etter avtale i hjemmet, barnehagen og skolen. Behandling kan dekkes av HELFO når vilkårene er oppfylt (henvisning fra lege; for barn under 18 år også avslag fra kommunen/PPT eller fylket).",
+    `Logopedpraksis i Tromsø for barn og voksne. Vi behandler på kontoret i ${ADDRESS_LINE}, eller etter avtale i hjemmet, barnehagen og skolen. Behandling kan dekkes av HELFO når vilkårene er oppfylt (henvisning fra lege; for barn under 18 år også avslag fra kommunen/PPT eller fylket).`,
     "",
     "## Tjenester",
     ...SERVICES.map((s) => `- [${s.name}](${abs(`/tjenester/${s.slug}`)}): ${s.short}`),
@@ -30,6 +30,7 @@ export async function GET() {
       ? ["## Artikler", ...articles.map((a) => `- [${a.title}](${abs(`/artikler/${a.slug}`)})${a.excerpt ? `: ${a.excerpt}` : ""}`), ""]
       : []),
     "## Kontakt",
+    `- Adresse: ${ADDRESS_LINE}`,
     ...TEAM.map((t) => `- ${t.name}: ${t.phone}`),
     "",
   ];

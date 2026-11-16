@@ -227,7 +227,7 @@ Add 301 redirect notes for the client: the old domain is separate and stays with
 ## 12. Open questions for the client (must be resolved before launch)
 
 1. Vector logo (SVG) or transparent PNG (current file has a baked-in checkerboard).
-2. New company details: org.nr, visit and postal address, general phone and email, opening hours.
+2. New company details: org.nr, general phone and email, opening hours. (Visit address resolved: Sykehusveien 21, 9019 Tromsø, set in `src/content/site.ts`.)
 3. New email addresses for Ingrid and Berit (old ones are on the old practice's domain).
 4. Do both therapists still hold the HELFO refusal agreement under the new company? Wording for the refusjon page.
 5. Domain name (e.g. `tromsologopedene.no`) and who controls DNS.

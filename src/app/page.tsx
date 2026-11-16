@@ -72,7 +72,7 @@ export default async function Home() {
               Våre logopeder har lang erfaring innen logopedisk arbeid og tilbyr utredning, rådgiving og oppfølging ved språk-, tale- og kommunikasjonsvansker, afasi, stamming, stemmevansker, svelgevansker, ansiktslammelser, EILO, lyttetrening etter CI-operasjon, lese- og skrivevansker og alternativ og supplerende kommunikasjon.
             </p>
             <p className="mt-4 text-lg">
-              Vi behandler på vårt kontor, eller etter avtale i hjemmet, barnehagen og skolen. De fleste får behandlingen dekket gjennom folketrygden, og vi kan være behjelpelige med søknadsprosessen.
+              Vi behandler på vårt kontor i {SITE.address.street} i {SITE.address.city}, eller etter avtale i hjemmet, barnehagen og skolen. De fleste får behandlingen dekket gjennom folketrygden, og vi kan være behjelpelige med søknadsprosessen.
             </p>
             <Image src="/images/stock/mor-og-sonn-leser.jpg" alt="Mor og sønn leser en bok sammen i sofaen" width={1600} height={900} sizes="(min-width: 768px) 560px, 100vw" className="mt-8 aspect-[16/9] w-full rounded-2xl object-cover" />
           </div>

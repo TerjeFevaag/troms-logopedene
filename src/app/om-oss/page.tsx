@@ -7,7 +7,7 @@ import { Faq } from "@/components/Faq";
 import { JsonLd } from "@/components/JsonLd";
 import { PageHeader } from "@/components/PageHeader";
 import { ABOUT_FAQS } from "@/content/faqs";
-import { SITE, abs } from "@/content/site";
+import { ADDRESS_LINE, SITE, abs } from "@/content/site";
 import { TEAM } from "@/content/team";
 
 export const metadata: Metadata = {
@@ -40,7 +40,7 @@ export default function OmOss() {
             Vi tilbyr utredning, rådgiving og oppfølging eller behandling ved språk-, tale- og kommunikasjonsvansker, afasi, stamming, stemmevansker, svelgevansker, ansiktslammelser, EILO, lyttetrening etter CI-operasjon, lese- og skrivevansker og alternativ og supplerende kommunikasjon.
           </p>
           <p>
-            Vi behandler på vårt kontor, eller etter avtale i hjemmet, barnehagen og skolen. Vi arbeider etter Norsk Logopedlags etiske retningslinjer og de satsene for undersøkelse og behandling som HELFO har satt.
+            Vi behandler på vårt kontor i {ADDRESS_LINE}, eller etter avtale i hjemmet, barnehagen og skolen. Vi arbeider etter Norsk Logopedlags etiske retningslinjer og de satsene for undersøkelse og behandling som HELFO har satt.
           </p>
           <h2>Refusjon</h2>
           <p>

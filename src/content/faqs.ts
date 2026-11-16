@@ -1,4 +1,5 @@
 import type { Faq } from "./services";
+import { ADDRESS_LINE } from "./site";
 
 export const HOME_FAQS: Faq[] = [
   {
@@ -19,7 +20,7 @@ export const HOME_FAQS: Faq[] = [
   },
   {
     q: "Hvor foregår behandlingen?",
-    a: "Vi behandler på kontoret vårt, eller etter avtale i hjemmet, barnehagen eller skolen. Ta kontakt for å høre hva som er mulig i ditt tilfelle.",
+    a: `Vi behandler på kontoret vårt i ${ADDRESS_LINE}, eller etter avtale i hjemmet, barnehagen eller skolen. Ta kontakt for å høre hva som er mulig i ditt tilfelle.`,
   },
   {
     q: "Hvordan bestiller jeg time?",

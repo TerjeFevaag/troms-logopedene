@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHeader } from "@/components/PageHeader";
-import { SITE } from "@/content/site";
+import { ADDRESS_LINE, SITE } from "@/content/site";
 
 export const metadata: Metadata = {
   title: "Personvernerklæring",
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/personvern" },
 };
 
-// TODO(client): have the client/lawyer review before launch. Controller details need org.nr and address.
+// TODO(client): have the client/lawyer review before launch. Controller details still need org.nr.
 export default function Personvern() {
   return (
     <>
@@ -17,7 +17,7 @@ export default function Personvern() {
       <section className="mx-auto max-w-site px-4 py-14 sm:px-6">
         <div className="prose-site max-w-3xl">
           <h2 className="!mt-0">Behandlingsansvarlig</h2>
-          <p>{SITE.name} er behandlingsansvarlig for personopplysninger som samles inn gjennom dette nettstedet.</p>
+          <p>{SITE.name}, {ADDRESS_LINE}, er behandlingsansvarlig for personopplysninger som samles inn gjennom dette nettstedet.</p>
           <h2>Hvilke opplysninger vi behandler</h2>
           <p>
             Hvis du bruker kontaktskjemaet, behandler vi navn, e-post, telefonnummer og innholdet i meldingen. Vi ber deg om ikke å sende sensitive helseopplysninger gjennom skjemaet.
