@@ -91,7 +91,7 @@ export function Footer() {
             <li><CookieSettingsButton className={link}>Cookie-innstillinger</CookieSettingsButton></li>
           </ul>
           <p>
-            Nettbutikk utviklet av{" "}
+            Nettside utviklet av{" "}
             <a href="https://fevaag.no" target="_blank" rel="noopener" className="font-semibold text-white underline underline-offset-2 hover:no-underline">
               Fevaag Web Consulting
             </a>

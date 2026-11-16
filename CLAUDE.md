@@ -247,6 +247,6 @@ Add 301 redirect notes for the client: the old domain is separate and stays with
 - Logo: checkerboard removed with alpha extraction (works on light backgrounds only). Ask the client for a vector.
 - Stock photos and article covers: see `src/content/image-credits.md`. Speech-therapy photos with Nordic-looking people are still wanted (paid library or the client's own).
 - Starter articles live in `src/content/articles-seed.ts` (reviewed by the therapists before publishing). Without a database, dev shows them as a preview; `npm run db:seed-articles` inserts them as drafts (`--publish` to publish).
-- Credit in the footer: "Nettbutikk utviklet av Fevaag Web Consulting" (fevaag.no), wording as supplied by the user.
+- Credit in the footer: "Nettside utviklet av Fevaag Web Consulting" (fevaag.no), wording as supplied by the user.
 - Not yet verified: admin/login, article create/upload and contact form end to end (need Neon, Blob, AUTH_SECRET, Resend), Lighthouse, screen-reader testing.
 - Legal pages are drafts: have the client/lawyer review before launch.
