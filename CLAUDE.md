@@ -230,9 +230,9 @@ Add 301 redirect notes for the client: the old domain is separate and stays with
 
 1. Vector logo (SVG) or transparent PNG (current file has a baked-in checkerboard).
 2. New company details: org.nr, general phone and email, opening hours. (Visit address resolved: Sykehusvegen 21, 9019 Tromsø, set in `src/content/site.ts`.)
-3. New email addresses for Ingrid and Berit (old ones are on the old practice's domain).
+3. ~~New email addresses~~ Resolved 2026-11-16: every employee uses `fornavn@tromsologopedene.no` (set in `src/content/team.ts`).
 4. ~~HELFO agreement~~ Resolved 2026-11-16: the practice has avtale om direkte oppgjør with HELFO. New therapists must have it too before the site lists them.
-5. Domain name (e.g. `tromsologopedene.no`) and who controls DNS.
+5. Domain: `tromsologopedene.no` (email domain). The site launches there once content is ready; `tromsologopedene.vercel.app` is the pre-launch address. Who controls DNS is still open.
 6. Higher-resolution photos of Ingrid and Berit (old ones are 207×207px) and of the clinic rooms. Old photos are being reused per the user's decision. Confirm the client is fine with that.
 7. Whether home, kindergarten and school visits continue, and any prices or waiting-time information they want published.
 8. Admin users' emails (the two therapists plus anyone else). Admin stack is decided: Vercel Postgres (Neon) + Vercel Blob, no external CMS.
