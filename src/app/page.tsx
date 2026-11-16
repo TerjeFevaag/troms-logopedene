@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 const FACTS = [
   { big: String(TEAM.length), label: "logopeder", text: "Alle er medlem av Norsk Logopedforbund." },
   { big: String(SERVICES.length), label: "fagområder", text: "Fra språk og stamming til svelging." },
-  { big: "Alle", label: "aldre", text: "Vi hjelper både barn og voksne." },
+  { big: "Alle", label: "aldre", text: "Fra småbarn til eldre." },
   { big: "HELFO", label: "dekker det meste", text: "Med henvisning fra lege betaler du ingen egenandel." },
 ];
 
@@ -47,7 +47,7 @@ export default async function Home() {
           <p className="text-sm font-semibold uppercase tracking-wider text-sage-dark">{SITE.slogan}</p>
           <h1 className="mt-4 max-w-xl text-4xl font-bold sm:text-5xl lg:text-6xl">Logoped i Tromsø for barn og voksne</h1>
           <p className="mt-5 max-w-lg text-lg text-ink md:text-xl">
-            Vi hjelper barn og voksne med språk, tale, stemme og svelging. Vi finner ut hva som er vanskelig, og lager en plan sammen med deg.
+            Vi finner ut hva som er vanskelig, og lager en plan sammen med deg.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Button href="/kontakt">Bestill time</Button>
@@ -69,7 +69,7 @@ export default async function Home() {
       <section className="mx-auto max-w-site px-4 py-16 sm:px-6 md:py-20" aria-labelledby="intro">
         <div className="grid gap-10 md:grid-cols-2 md:items-center">
           <div>
-            <h2 id="intro" className="text-3xl font-bold md:text-4xl">Velkommen til Tromsølogopedene</h2>
+            <h2 id="intro" className="text-3xl font-bold md:text-4xl">Velkommen til oss</h2>
             <p className="mt-5 text-lg">
               Vi er logopeder med lang erfaring. Vi hjelper barn, ungdom og voksne som strever med å snakke, forstå, lese, skrive eller svelge.
             </p>
