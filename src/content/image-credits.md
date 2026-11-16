@@ -17,7 +17,7 @@ Photos below are to be reviewed by the client before launch.
 Article covers are cropped to 16:9 (1200x675). The HELFO cover shows a stock doctor, not a real clinician of ours; swap for a neutral image if preferred.
 
 Other images:
-- `public/images/hero.jpg`, `hero-photo.jpg`: reused from the old Logopedklinikken site (client decision).
+- `public/images/hero.jpg`, `hero-photo.jpg`: reused from the old Logopedklinikken site (client decision). Upscaled 4x with Real-ESRGAN (realesrgan-x4plus) on 2026-11-16, since no higher-resolution original exists.
 - `public/images/team/*`: therapist portraits reused from the old site (client decision, 207px originals).
 
 TODO(client): replace or supplement with speech-therapy photos (paid library or the client's own).
