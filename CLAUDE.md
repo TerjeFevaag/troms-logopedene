@@ -65,7 +65,7 @@ Source: old `/informasjon/refusjonsavtale/`. Rules for treatment covered by HELF
 Link to helfo.no. The practice follows the Norwegian Association of Speech and Language Therapists (Norsk Logopedlag, NLL) ethical guidelines and HELFO's rates. Verify these still hold for the *new* company's agreement; do not claim a HELFO agreement as fact until the client confirms it (`TODO(client)`).
 
 ### Contact (old, for reference only; new company details are TODO)
-Old visit address: Siva Innovasjonssenter, Sykehusveien 21, 9019 Tromsø. Old postal address: Malmvegen 126, 9022 Krokelvdalen. Do not assume the new practice uses either. `TODO(client)`: address, org.nr, general phone, general email, opening hours, whether home/kindergarten/school visits are offered.
+Old visit address: Siva Innovasjonssenter, Sykehusvegen 21, 9019 Tromsø. Old postal address: Malmvegen 126, 9022 Krokelvdalen. The new practice keeps the visit address (confirmed 2026-11-16). `TODO(client)`: org.nr, general phone, general email, opening hours, whether home/kindergarten/school visits are offered.
 
 ## 4. Brand and colour (from the logo)
 
@@ -227,7 +227,7 @@ Add 301 redirect notes for the client: the old domain is separate and stays with
 ## 12. Open questions for the client (must be resolved before launch)
 
 1. Vector logo (SVG) or transparent PNG (current file has a baked-in checkerboard).
-2. New company details: org.nr, general phone and email, opening hours. (Visit address resolved: Sykehusveien 21, 9019 Tromsø, set in `src/content/site.ts`.)
+2. New company details: org.nr, general phone and email, opening hours. (Visit address resolved: Sykehusvegen 21, 9019 Tromsø, set in `src/content/site.ts`.)
 3. New email addresses for Ingrid and Berit (old ones are on the old practice's domain).
 4. Do both therapists still hold the HELFO refusal agreement under the new company? Wording for the refusjon page.
 5. Domain name (e.g. `tromsologopedene.no`) and who controls DNS.

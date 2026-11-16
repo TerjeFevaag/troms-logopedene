@@ -7,7 +7,7 @@ import { TEAM } from "@/content/team";
 
 export const metadata: Metadata = {
   title: "Kontakt oss og bestill time",
-  description: "Kontakt Tromsølogopedene i Sykehusveien 21, 9019 Tromsø. Ring Ingrid Steineger Dahl eller Berit Småbakk, eller send oss en melding.",
+  description: "Kontakt Tromsølogopedene i Sykehusvegen 21, 9019 Tromsø. Ring Ingrid Steineger Dahl eller Berit Småbakk, eller send oss en melding.",
   alternates: { canonical: "/kontakt" },
 };
 

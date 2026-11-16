@@ -8,7 +8,7 @@ export const SITE = {
   description:
     "Tromsølogopedene er en logopedpraksis i Tromsø. Vi tilbyr utredning, rådgiving og behandling ved språk-, tale- og stemmevansker, stamming, svelgevansker, dysleksi og mer.",
   // TODO(client): fill these in. Left empty on purpose so nothing invented reaches schema/metadata.
-  address: { street: "Sykehusveien 21", postalCode: "9019", city: "Tromsø", country: "NO" },
+  address: { street: "Sykehusvegen 21", postalCode: "9019", city: "Tromsø", country: "NO" },
   phone: "", // general phone
   email: "", // general email
   openingHours: "",
@@ -24,7 +24,7 @@ export const NAV = [
   { href: "/kontakt", label: "Kontakt" },
 ] as const;
 
-/** "Sykehusveien 21, 9019 Tromsø" */
+/** "Sykehusvegen 21, 9019 Tromsø" */
 export const ADDRESS_LINE = `${SITE.address.street}, ${SITE.address.postalCode} ${SITE.address.city}`;
 /** Plain link to Google Maps (no embed, so no third-party cookies on our pages). */
 export const MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(ADDRESS_LINE)}`;
