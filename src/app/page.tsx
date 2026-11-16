@@ -40,10 +40,10 @@ export default async function Home() {
           alt="Logoped sammen med et barn i en logopedtime"
           fill
           priority
-          sizes="(min-width: 768px) 100vw, 1px"
+          sizes="(min-width: 1280px) 2200px, (min-width: 768px) 1900px, 1px"
           className="-z-10 hidden object-cover md:block md:object-right"
         />
-        <div className="absolute inset-0 -z-10 hidden bg-gradient-to-r from-white from-20% via-white/55 via-45% to-transparent md:block" aria-hidden="true" />
+        <div className="absolute inset-0 -z-10 hidden bg-gradient-to-r from-white from-20% via-white/55 via-45% to-transparent md:block xl:to-60%" aria-hidden="true" />
         <div className="mx-auto max-w-site px-4 pb-8 pt-12 sm:px-6 md:py-24 lg:py-28">
           <p className="text-sm font-semibold uppercase tracking-wider text-sage-dark">{SITE.slogan}</p>
           <h1 className="mt-4 max-w-xl text-4xl font-bold sm:text-5xl lg:text-6xl">Logoped i Tromsø for barn og voksne</h1>
