@@ -8,11 +8,11 @@ export const HOME_FAQS: Faq[] = [
   },
   {
     q: "Trenger jeg henvisning for å komme til logoped?",
-    a: "For at behandlingen skal dekkes av HELFO, trengs vanligvis henvisning fra fastlege eller spesialist. For barn og unge under 18 år kreves i tillegg avslag på logopedisk oppfølging fra kommunen (PPT) eller fylket. Se siden om refusjon.",
+    a: "Du kan ta kontakt uten henvisning. For at HELFO skal dekke behandlingen, trenger du henvisning fra lege med diagnose. Fastlege, sykehuslege eller annen spesialist kan henvise. Barn og unge trenger ikke avslag fra kommunen eller PPT først. Se siden om refusjon.",
   },
   {
     q: "Får jeg dekket behandlingen av HELFO?",
-    a: "Behandling hos logoped med refusjonsavtale dekkes for de fleste gjennom folketrygden når vilkårene er oppfylt. Vi kan hjelpe med søknadsprosessen. Ta kontakt for oppdatert informasjon om vår avtale.",
+    a: "Ja, de fleste behandlingene våre dekkes når du har henvisning fra lege. Det er ingen egenandel, og vi gjør opp direkte med HELFO, så du trenger ikke søke selv. Lese- og skrivevansker og dysleksi dekkes ikke.",
   },
   {
     q: "Hvem kan komme til dere?",
@@ -24,7 +24,7 @@ export const HOME_FAQS: Faq[] = [
   },
   {
     q: "Hvordan bestiller jeg time?",
-    a: "Ta kontakt på telefon eller e-post, eller bruk kontaktskjemaet. Vi finner sammen ut hva som passer og hvilke papirer som trengs.",
+    a: "Ring en av logopedene, eller bruk kontaktskjemaet. Vi finner sammen ut hva som passer, og om du trenger henvisning fra lege.",
   },
 ];
 
@@ -54,14 +54,22 @@ export const ABOUT_FAQS: Faq[] = [
 export const REFUSJON_FAQS: Faq[] = [
   {
     q: "Hva trenger jeg for å få behandlingen dekket av HELFO?",
-    a: "Henvisning fra spesialist eller fastlege med diagnose i henhold til ICPC-2. For barn og unge under 18 år trengs også avslag på logopedisk oppfølging fra kommunen (PPT) eller fylket (for elever i videregående opplæring).",
+    a: "Henvisning fra lege med diagnose (ICPC-2 eller ICD-10). Fastlege, sykehuslege og andre spesialister kan henvise. Du trenger ikke søke HELFO selv.",
   },
   {
-    q: "Kan dere hjelpe med papirene til HELFO?",
-    a: "Ja. Vi kan være behjelpelige med søknadsprosessen og videresender aktuelle papirer til HELFO hvis du ønsker det.",
+    q: "Må barnet mitt ha avslag fra kommunen eller PPT først?",
+    a: "Nei, det er ikke et krav. Men HELFO dekker ikke behandlingen hvis barnet allerede får logopedhjelp for det samme fra kommunen, barnehagen eller skolen.",
   },
   {
-    q: "Hvor finner jeg mer informasjon?",
-    a: "Se helfo.no, eller ta kontakt med oss.",
+    q: "Må jeg betale noe?",
+    a: "Nei, det er ingen egenandel for logopedbehandling i folketrygden. Vi gjør opp direkte med HELFO.",
+  },
+  {
+    q: "Hvor mange behandlinger dekkes?",
+    a: "Det er ingen fast grense, og du trenger ikke ny henvisning underveis. Vi vurderer fortløpende sammen med deg om behandlingen fortsatt hjelper.",
+  },
+  {
+    q: "Dekkes lese- og skrivevansker og dysleksi?",
+    a: "Nei. Utredning og oppfølging av lese- og skrivevansker, dysleksi og dyskalkuli dekkes ikke av HELFO. Det er skolens ansvar.",
   },
 ];

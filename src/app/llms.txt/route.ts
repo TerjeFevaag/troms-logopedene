@@ -12,7 +12,7 @@ export async function GET() {
     "",
     `> ${SITE.description} Nettstedet er på norsk (bokmål).`,
     "",
-    `Logopedpraksis i Tromsø for barn og voksne. Vi behandler på kontoret i ${ADDRESS_LINE}, eller etter avtale i hjemmet, barnehagen og skolen. Behandling kan dekkes av HELFO når vilkårene er oppfylt (henvisning fra lege; for barn under 18 år også avslag fra kommunen/PPT eller fylket).`,
+    `Logopedpraksis i Tromsø for barn og voksne. Vi behandler på kontoret i ${ADDRESS_LINE}, eller etter avtale i hjemmet, barnehagen og skolen. Behandling kan dekkes av HELFO med henvisning fra lege med diagnose. Ingen egenandel, ingen søknad til HELFO, og barn trenger ikke avslag fra kommunen/PPT. Lese- og skrivevansker/dysleksi dekkes ikke.`,
     "",
     "## Tjenester",
     ...SERVICES.map((s) => `- [${s.name}](${abs(`/tjenester/${s.slug}`)}): ${s.short}`),

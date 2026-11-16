@@ -59,10 +59,12 @@ Source copy is from the old `/tjenester/`. Expand each into a full page (what it
 Only list a service as offered if at least one of the two therapists covers it. Check the bios above: everything in the table is covered by Ingrid and/or Berit except none flagged; Dysleksi and EILO/VCD are Berit; AKK and CI are Ingrid. Show "Hvem tilbyr dette" per service pointing to the right therapist(s).
 
 ### HELFO / refusjon (own page: `/refusjon`)
-Source: old `/informasjon/refusjonsavtale/`. Rules for treatment covered by HELFO:
-1. Referral from specialist or GP with a diagnosis per ICPC-2.
-2. Refusal of speech therapy follow-up from the municipality (PPT) or county (upper-secondary pupils). Applies to children and young people under 18.
-Link to helfo.no. The practice follows the Norwegian Association of Speech and Language Therapists (Norsk Logopedlag, NLL) ethical guidelines and HELFO's rates. Verify these still hold for the *new* company's agreement; do not claim a HELFO agreement as fact until the client confirms it (`TODO(client)`).
+The old site's rules (PPT refusal for under-18s, "refusjonsavtale", "we help with the application") were outdated. Rules verified 2026-11-16 against FOR-2021-12-17-3709 (in force 1 Jan 2022) and Helsedirektoratet's rundskriv; all site wording comes from `src/content/helfo.ts`:
+1. Referral from any doctor (GP, hospital doctor, specialist) with a diagnosis (ICPC-2 or ICD-10). No application or pre-approval at HELFO.
+2. No avslag from kommune/PPT required for any age, but no stønad if the patient gets the same help from kommune/fylkeskommune.
+3. No egenandel, no 25-treatment limit, term is "avtale om direkte oppgjør". Home treatment only covered when health prevents attending.
+4. Dysleksi, lese- og skrivevansker and dyskalkuli are NOT covered (service `dysleksi` has `helfoCovered: false`).
+The practice follows the Norwegian Association of Speech and Language Therapists (Norsk Logopedlag, NLL) ethical guidelines and HELFO's rates. Verify these still hold for the *new* company's agreement; do not claim a HELFO agreement as fact until the client confirms it (`TODO(client)`).
 
 ### Contact (old, for reference only; new company details are TODO)
 Old visit address: Siva Innovasjonssenter, Sykehusvegen 21, 9019 Tromsø. Old postal address: Malmvegen 126, 9022 Krokelvdalen. The new practice keeps both: visit address in schema/maps, postal address only on /kontakt and /personvern (confirmed 2026-11-16). `TODO(client)`: org.nr, general phone, general email, opening hours, whether home/kindergarten/school visits are offered.

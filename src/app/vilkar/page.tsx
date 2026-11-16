@@ -30,7 +30,7 @@ export default function Vilkar() {
           </p>
           <h2>4. Refusjon fra HELFO</h2>
           <p>
-            Informasjonen om refusjon er veiledende. Det er HELFO som avgjør om vilkårene er oppfylt, og regelverket kan endres. Se <Link href="/refusjon">refusjonssiden</Link> og helfo.no for oppdaterte regler.
+            Informasjonen om refusjon er veiledende. Vilkårene står i folketrygdloven og forskrift om stønad til logoped og audiopedagog, og regelverket kan endres. Se <Link href="/refusjon">refusjonssiden</Link> for en oversikt og lenker til kildene.
           </p>
           <h2>5. Opphavsrett</h2>
           <p>

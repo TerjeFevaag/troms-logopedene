@@ -7,6 +7,7 @@ import { Faq } from "@/components/Faq";
 import { JsonLd } from "@/components/JsonLd";
 import { PageHeader } from "@/components/PageHeader";
 import { ABOUT_FAQS } from "@/content/faqs";
+import { HELFO_TEXT } from "@/content/helfo";
 import { ADDRESS_LINE, SITE, abs } from "@/content/site";
 import { TEAM } from "@/content/team";
 
@@ -44,7 +45,7 @@ export default function OmOss() {
           </p>
           <h2>Refusjon</h2>
           <p>
-            De fleste får behandlingen dekket gjennom folketrygden når vilkårene er oppfylt. Vi kan være behjelpelige med søknadsprosessen. <Link href="/refusjon">Les mer om refusjon</Link>.
+            {HELFO_TEXT.short} <Link href="/refusjon">Les mer om refusjon</Link>.
           </p>
           <h2>Se alle tjenester</h2>
           <p>

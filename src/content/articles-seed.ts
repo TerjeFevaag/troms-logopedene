@@ -79,27 +79,33 @@ export const SEED_ARTICLES: SeedArticle[] = [
     cover: { src: "/images/articles/slik-far-du-logopedbehandling-dekket-av-helfo.jpg", alt: "Kvinnelig lege sitter ved skrivebordet sitt" },
     title: "Slik får du logopedbehandling dekket av HELFO",
     excerpt:
-      "De fleste får logopedbehandling dekket gjennom folketrygden hvis vilkårene er oppfylt. Her er hva du trenger, steg for steg.",
+      "Med henvisning fra lege dekker folketrygden de fleste logopedbehandlinger, uten egenandel. Her er hva du trenger, og hva som ikke dekkes.",
     seoTitle: "Logoped og HELFO: henvisning og refusjon forklart",
     seoDescription:
-      "Hva du trenger for å få logopedbehandling dekket av HELFO: henvisning, diagnose og avslag fra kommunen eller fylket. Logoped i Tromsø.",
+      "Slik får du logopedbehandling dekket av HELFO: henvisning fra lege med diagnose. Ingen egenandel og ikke krav om avslag fra kommunen. Logoped i Tromsø.",
     publishedAt: "2026-10-20T08:00:00+02:00",
     body: `
-<p>Mange lurer på om logopedbehandling dekkes av det offentlige. Det kan det gjøre, men bare hvis vilkårene er oppfylt. Her er en enkel oversikt. Regelverket kan endres, så sjekk alltid oppdatert informasjon på <a href="https://www.helfo.no">helfo.no</a>.</p>
+<p>Mange lurer på om logopedbehandling dekkes av det offentlige. Det gjør den i de fleste tilfeller, og reglene er enklere enn mange tror. Her er en oversikt over reglene som har gjeldt siden 2022.</p>
 <h2>Dette trenger du</h2>
 <ol>
-<li><strong>Henvisning</strong> fra fastlege eller spesialist, med diagnose etter ICPC-2.</li>
-<li><strong>Avslag på logopedisk oppfølging</strong> fra kommunen (PPT) eller fylket (gjelder elever i videregående opplæring). Dette gjelder for barn og unge under 18 år.</li>
+<li><strong>Henvisning fra lege.</strong> Fastlege, sykehuslege eller annen spesialist kan henvise. Henvisningen må inneholde en diagnose (ICPC-2 eller ICD-10).</li>
+<li><strong>Behandlingen må ha vesentlig betydning</strong> for helsen og funksjonsevnen din. Det vurderer logopeden når dere starter.</li>
 </ol>
-<p>For voksne er det vanligvis henvisningen som er det sentrale.</p>
+<p>Du trenger ikke søke HELFO, og du trenger ikke forhåndsgodkjenning. Logopeden gjør opp direkte med HELFO.</p>
+<h2>Hva koster det?</h2>
+<p>Det er ingen egenandel for logopedbehandling i folketrygden. Det er heller ingen fast grense for antall behandlinger, og du trenger ikke ny henvisning underveis.</p>
+<h2>Barn og unge</h2>
+<p>Barn og unge trenger ikke avslag fra kommunen (PPT) eller fylket først. Men får barnet allerede logopedhjelp for det samme fra kommunen, barnehagen eller skolen, dekker ikke HELFO behandlingen i tillegg.</p>
+<h2>Dette dekkes ikke</h2>
+<ul>
+<li>Lese- og skrivevansker, dysleksi og dyskalkuli. Det er skolens ansvar.</li>
+<li>Behandling hjemme, med mindre helsetilstanden gjør at du ikke kan komme til kontoret.</li>
+</ul>
 <h2>Slik går du frem</h2>
 <ul>
 <li>Snakk med fastlegen din om vanskene og be om henvisning til logoped.</li>
-<li>Gjelder det et barn eller en ungdom under 18 år, søk først om logopedisk hjelp via kommunen (PPT), eller fylket for videregående elever, og be om skriftlig svar.</li>
-<li>Ta kontakt med en av logopedene. Vi forteller deg hva som mangler og hva som er neste steg.</li>
+<li>Ta kontakt med en av logopedene. Vi forteller deg om noe mangler, og hva som er neste steg.</li>
 </ul>
-<h2>Vi hjelper deg</h2>
-<p>Er du usikker på hvordan du skal gå frem, kan du kontakte en av oss. Vi videresender om ønskelig aktuelle papirer til HELFO.</p>
 <p>Se også siden om <a href="/refusjon">refusjon og henvisning</a>.</p>
 `,
   },

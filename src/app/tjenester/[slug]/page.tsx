@@ -7,6 +7,7 @@ import { ContactBlock } from "@/components/ContactBlock";
 import { Faq } from "@/components/Faq";
 import { JsonLd } from "@/components/JsonLd";
 import { PageHeader } from "@/components/PageHeader";
+import { HELFO_TEXT } from "@/content/helfo";
 import { SERVICES, serviceBySlug } from "@/content/services";
 import { TEAM } from "@/content/team";
 import { serviceSchema } from "@/lib/schema";
@@ -69,7 +70,8 @@ export default async function ServicePage({ params }: Props) {
           ))}
           <h2>Refusjon</h2>
           <p>
-            Behandlingen kan dekkes av HELFO når vilkårene er oppfylt. Vanligvis trengs henvisning fra lege. <Link href="/refusjon">Les om refusjon og henvisning</Link>.
+            {s.helfoCovered === false ? HELFO_TEXT.serviceNotCovered : HELFO_TEXT.serviceCovered}{" "}
+            <Link href="/refusjon">Les om refusjon og henvisning</Link>.
           </p>
         </article>
 

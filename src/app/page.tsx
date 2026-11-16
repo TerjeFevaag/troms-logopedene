@@ -6,6 +6,7 @@ import { ContactBlock } from "@/components/ContactBlock";
 import { Faq } from "@/components/Faq";
 import { ServiceIcon } from "@/components/ServiceIcon";
 import { HOME_FAQS } from "@/content/faqs";
+import { HELFO_TEXT } from "@/content/helfo";
 import { SERVICES } from "@/content/services";
 import { SITE } from "@/content/site";
 import { TEAM } from "@/content/team";
@@ -24,7 +25,7 @@ const FACTS = [
   { big: "2", label: "logopeder MNLL", text: "Medlemmer av Norsk Logopedlag med lang erfaring." },
   { big: "9", label: "fagområder", text: "Fra språk og stamming til svelging og AKK." },
   { big: "Alle", label: "aldre", text: "Vi hjelper både barn og voksne." },
-  { big: "HELFO", label: "refusjon", text: "Vi hjelper med henvisning og søknadsprosess." },
+  { big: "HELFO", label: "dekker behandlingen", text: "Med henvisning fra lege. Ingen egenandel." },
 ];
 
 export default async function Home() {
@@ -72,7 +73,7 @@ export default async function Home() {
               Våre logopeder har lang erfaring innen logopedisk arbeid og tilbyr utredning, rådgiving og oppfølging ved språk-, tale- og kommunikasjonsvansker, afasi, stamming, stemmevansker, svelgevansker, ansiktslammelser, EILO, lyttetrening etter CI-operasjon, lese- og skrivevansker og alternativ og supplerende kommunikasjon.
             </p>
             <p className="mt-4 text-lg">
-              Vi behandler på vårt kontor i {SITE.address.street} i {SITE.address.city}, eller etter avtale i hjemmet, barnehagen og skolen. De fleste får behandlingen dekket gjennom folketrygden, og vi kan være behjelpelige med søknadsprosessen.
+              Vi behandler på vårt kontor i {SITE.address.street} i {SITE.address.city}, eller etter avtale i hjemmet, barnehagen og skolen. Med henvisning fra lege dekker folketrygden de fleste behandlingene, uten egenandel.
             </p>
             <Image src="/images/stock/mor-og-sonn-leser.jpg" alt="Mor og sønn leser en bok sammen i sofaen" width={1600} height={900} sizes="(min-width: 768px) 560px, 100vw" className="mt-8 aspect-[16/9] w-full rounded-2xl object-cover" />
           </div>
@@ -129,7 +130,7 @@ export default async function Home() {
           <div>
             <h2 id="helfo" className="!text-white text-3xl font-bold">Refusjon fra HELFO</h2>
             <p className="mt-3 max-w-2xl text-lg text-white/90">
-              For at behandlingen skal dekkes trengs vanligvis henvisning fra lege, og for barn under 18 år avslag på oppfølging fra kommunen (PPT) eller fylket. Vi hjelper deg med å finne ut hva som gjelder.
+              {HELFO_TEXT.band}
             </p>
           </div>
           <Button href="/refusjon" variant="light">Les om refusjon</Button>

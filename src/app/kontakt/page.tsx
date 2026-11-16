@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Button } from "@/components/Button";
 import { ContactForm } from "@/components/ContactForm";
 import { PageHeader } from "@/components/PageHeader";
+import { HELFO_TEXT } from "@/content/helfo";
 import { MAPS_URL, SITE } from "@/content/site";
 import { TEAM } from "@/content/team";
 
@@ -60,7 +61,7 @@ export default function Kontakt() {
 
           <div className="rounded-2xl border border-line p-6">
             <h2 className="text-xl font-bold">Henvisning og HELFO</h2>
-            <p className="mt-2 text-ink/90">De fleste får behandlingen dekket av HELFO. Vi hjelper deg med henvisning og papirer.</p>
+            <p className="mt-2 text-ink/90">{HELFO_TEXT.short}</p>
             <Link href="/refusjon" className="mt-1 inline-block py-2 font-semibold text-blue hover:underline">Les om refusjon →</Link>
           </div>
         </aside>

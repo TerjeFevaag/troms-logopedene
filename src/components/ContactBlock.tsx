@@ -9,7 +9,7 @@ export function ContactBlock() {
         <div>
           <h2 id="contact-cta" className="!text-white text-3xl font-bold md:text-4xl">Hvordan kan vi hjelpe deg?</h2>
           <p className="mt-4 max-w-xl text-lg text-white/90">
-            Ta kontakt, så finner vi ut hva som passer for deg eller barnet ditt. Vi hjelper også med henvisning og HELFO-papirer.
+            Ta kontakt, så finner vi ut hva som passer for deg eller barnet ditt. Med henvisning fra lege dekker HELFO de fleste behandlingene.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
             <Button href="/kontakt" variant="light">Ta kontakt</Button>

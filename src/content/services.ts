@@ -1,3 +1,5 @@
+import { HELFO_TEXT } from "./helfo";
+
 export type Faq = { q: string; a: string };
 
 export type ServiceImage = { src: string; alt: string; width: number; height: number };
@@ -15,6 +17,8 @@ export type Service = {
   sections: { heading: string; paragraphs?: string[]; bullets?: string[] }[];
   faqs: Faq[];
   related: string[];
+  /** false when HELFO does not cover the service (e.g. dysleksi). Defaults to covered. */
+  helfoCovered?: boolean;
 };
 
 export const SERVICES: Service[] = [
@@ -60,7 +64,7 @@ export const SERVICES: Service[] = [
       },
       {
         q: "Trenger jeg henvisning?",
-        a: "For at behandlingen skal dekkes av HELFO, trengs vanligvis henvisning fra lege (fastlege eller spesialist). Les mer på siden om refusjon.",
+        a: HELFO_TEXT.referral,
       },
       {
         q: "Behandler dere både barn og voksne?",
@@ -195,7 +199,7 @@ export const SERVICES: Service[] = [
       },
       {
         q: "Trenger jeg henvisning?",
-        a: "For refusjon fra HELFO trengs vanligvis henvisning fra lege. Se siden om refusjon for detaljer.",
+        a: HELFO_TEXT.referral,
       },
     ],
     related: ["ansiktslammelse", "stemmevansker"],
@@ -270,8 +274,13 @@ export const SERVICES: Service[] = [
         q: "Hvilken alder utreder dere?",
         a: "Ta kontakt, så vurderer vi sammen om en utredning er riktig og hva som passer for alderen.",
       },
+      {
+        q: "Dekker HELFO utredningen?",
+        a: "Nei. Lese- og skrivevansker og dysleksi dekkes ikke av HELFO. Det er skolens ansvar å gi spesialundervisning. Ta kontakt hvis du vil vite hva en utredning koster hos oss.",
+      },
     ],
     related: ["sprakvansker", "stamming"],
+    helfoCovered: false,
   },
   {
     slug: "eilo-vcd",
@@ -307,7 +316,7 @@ export const SERVICES: Service[] = [
       },
       {
         q: "Trenger jeg henvisning?",
-        a: "Vanligvis ja, fra lege, hvis behandlingen skal dekkes av HELFO.",
+        a: HELFO_TEXT.referral,
       },
     ],
     related: ["stemmevansker", "svelgevansker"],
@@ -333,7 +342,7 @@ export const SERVICES: Service[] = [
     faqs: [
       {
         q: "Trenger jeg henvisning?",
-        a: "Ja. Oppfølgingen skjer etter henvisning fra kompetansesenter eller sykehus.",
+        a: "Ja. For at HELFO skal dekke oppfølgingen, må henvisningen komme fra lege, for eksempel ved sykehuset. Vi samarbeider gjerne med sykehus og kompetansesenter underveis.",
       },
       {
         q: "Hvem utfører lyttetreningen?",
